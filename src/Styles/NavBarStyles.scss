@@ -1,0 +1,41 @@
+@import 'node_modules/@coreui/coreui/scss/coreui';
+
+// Applying the falconry palette to the navbar
+.bg-light {
+  background-color: #F5F5DC !important; // Cream for a lighter background, good for general areas
+}
+
+.navbar {
+  padding: 0.5rem 1rem;
+
+  .navbar-brand {
+    font-weight: bold;
+    color: #DAA520; // Gold for branding, makes it stand out
+  }
+
+  .nav-link {
+    color: #0D4D4D; // Deep Forest Green for text, gives an earthy, natural feel
+    &:hover {
+      color: #DAA520; // Gold on hover, adds a touch of luxury and visibility
+    }
+  }
+
+  .dropdown-menu {
+    background-color: #fff; // Keeps dropdowns clean and readable
+    border: none;
+    box-shadow: 0 8px 16px rgba(0,0,0,.15); // Subtle shadow for depth
+  }
+
+  .dropdown-item {
+    color: #333; // Dark color for contrast
+    &:hover {
+      background-color: #F5F5DC; // Cream for a light hover effect, maintains theme consistency
+    }
+  }
+}
+
+.navbar-logo {
+  height: 50px; // or your preferred size
+  width: auto; // maintains the aspect ratio
+}
+
