@@ -1,0 +1,22 @@
+body {
+  display: block !important; // probably to remove
+  justify-content: center;
+}
+
+.admin-container {
+  background-color: antiquewhite;
+  font-family: monospace;
+
+  .menu-col {
+    width: 10%;
+    border: black;
+    border-width: 5px;
+    border-style: solid;
+  }
+
+  .content-col {
+    border: black;
+    border-width: 5px;
+    border-style: solid;
+  }
+}
