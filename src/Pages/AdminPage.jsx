@@ -49,26 +49,25 @@ export default function AdminPage() {
             <div className="d-flex flex-column align-items-start">
               <CButton
                 color="light"
-                className=" my-2"
+                className=" my-3"
                 onClick={() => setSelectedContent(BIRD_UPLOAD)}
               >
                 Upload Aves
               </CButton>
               <CButton
                 color="light"
-                className="my-2"
+                className="my-3"
                 onClick={() => setSelectedContent(MATERIAL_UPLOAD)}
               >
                 Upload Material
               </CButton>
               <CButton
                 color="light"
-                className="my-2"
+                className="my-3"
                 onClick={() => setSelectedContent(ALL_CONTENT)}
               >
                 Ver tudo
               </CButton>
-              {/* Add more menu items as needed */}
             </div>
           </CCol>
 
