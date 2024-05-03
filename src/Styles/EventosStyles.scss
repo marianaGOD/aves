@@ -1,0 +1,91 @@
+// Define color variables
+$background-dark: #2c281e;
+$gold: #daa520;
+$cream: #f5f5dc;
+
+
+.eventos-container {
+  color: $cream;
+  background-image: url("../assets/aguiabg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+
+
+  .accordion {
+    background-color: transparent;
+    border: none;
+
+    .accordion-item {
+      background-color: rgba($background-dark, 0.85);
+      border: 1px solid $gold;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      padding: 0.5rem;
+
+      .accordion-header {
+        font-size: 1.25rem;
+        color: $gold;
+
+        .accordion-button {
+          color: $cream;
+          background-color: rgba($background-dark, 0.85);
+          &:focus {
+            border-color: $gold;
+            box-shadow: none;
+          }
+          &:not(.collapsed) {
+            background-color: darken($background-dark, 5%);
+            color: $gold;
+          }
+        }
+      }
+
+      .accordion-body {
+        font-size: 1rem;
+        background-color: darken($background-dark, 5%);
+        color: $cream;
+      }
+    }
+  }
+
+
+  h2 {
+    color: $gold;
+  }
+
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding-left: 20px;
+      background-image: url('../assets/ulfalcon.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 16px 16px;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+
+.controlo-toptitle {
+  background-color: rgba($background-dark, 0.75);
+  border-radius: 16px;
+  margin-bottom: 2%;
+  padding: 20px;
+}
+
+
+@media (max-width: 768px) {
+  .controlo-leftbox, .controlo-rightbox {
+    margin-bottom: 10px;
+  }
+}

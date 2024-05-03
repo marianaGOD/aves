@@ -1,26 +1,34 @@
-// Defining the new color palette
-$text-color: #fff; // White for text
-$primary-color: #0e3131; // Deep Forest Green as primary color
-
+$text-color: #fff; 
 
 .homepage-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: flex-end; 
+  text-align: right; 
+  height: 100vh;
+  width: 100%; 
   padding: 2rem;
-  color: $text-color;
-  background-color: lighten($primary-color, 10%); // Slightly lighter forest green
-  text-align: center;
+  background-image: url("../assets/falcaobg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+   padding-right: 30%;
+   
 
-  h2, p {
+  h2 {
+    font-size: 5rem;
+  } 
+  p {
+    font-size: large;
     margin-bottom: 1rem;
   }
 }
 
-.homepage-cards {
-  .card {
-    margin-top: 1rem;
-    padding: 1rem;
-
-    .card-title {
-      color: darken($primary-color, 10%); // Slightly darker forest green
-    }
+@media (max-width: 768px) {
+  .homepage-hero {
+    align-items: center; 
+    text-align: center;
+    padding-right: 0;
   }
 }

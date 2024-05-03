@@ -11,33 +11,45 @@ import {
   CDropdownMenu,
   CDropdownItem,
 } from "@coreui/react";
-import "../Styles/NavBarStyles.scss"; // Ensure this path is correct
-import aveslogo from "../assets/aveslogo.png"
+import "../Styles/NavBarStyles.scss"; 
+import aveslogo from "../assets/avessemfundo.png"
 
 const Navbar = () => {
   return (
     <CNavbar expand="lg" colorScheme="light" className="bg-light">
-      <CContainer fluid className="bg-light navbar-container" >
-        <CNavbarBrand href="/">
-          <img src={aveslogo} alt="" className="navbar-logo" />
+      <CContainer fluid className="bg-light navbar-container">
+        <CNavbarBrand href="/" className="navbar-brand">
+          <img src={aveslogo} alt="" className="navbar-logo" /> <br />
+          <h3 className="navbar-title">Aves do Oeste by TM</h3>
         </CNavbarBrand>
         <CNavbarNav>
           <CNavItem>
-            <CNavLink href="/home">Home</CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="/about">About</CNavLink>
+            <CNavLink href="/">Home</CNavLink>
           </CNavItem>
           <CDropdown variant="nav">
-            <CDropdownToggle color="secondary">Services</CDropdownToggle>
+            <CDropdownToggle color="secondary">Serviços</CDropdownToggle>
             <CDropdownMenu>
-              <CDropdownItem href="#">Service 1</CDropdownItem>
-              <CDropdownItem href="#">Service 2</CDropdownItem>
-              <CDropdownItem href="#">Service 3</CDropdownItem>
+              <CDropdownItem href="/controloavifauna">
+                Controlo de Avifauna
+              </CDropdownItem>
+              <CDropdownItem href="/eventos">Eventos & Presenças</CDropdownItem>
+              <CDropdownItem href="/instalações">Aluguer de Instalações para Aves</CDropdownItem>
             </CDropdownMenu>
           </CDropdown>
           <CNavItem>
-            <CNavLink href="/contact">Contact</CNavLink>
+            <CNavLink href="/available">Aves Disponíveis</CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink href="/about">Material de Falcoaria</CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink href="/about">Galeria</CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink href="/about">Sobre Nós</CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink href="/contact">Contactos</CNavLink>
           </CNavItem>
         </CNavbarNav>
       </CContainer>
