@@ -10,7 +10,7 @@ import {
   CCardImage,
   CButton,
 } from "@coreui/react";
-import "../Styles/AvesDisponiveisStyles.scss"; 
+import "../Styles/AvesDisponiveisStyles.scss";
 import eagle from "../assets/goldeneagle.jpg";
 import falcon from "../assets/peregrinefalcon.jpg";
 import owl from "../assets/barnowl.jpg";
@@ -41,6 +41,30 @@ export default function AvesDisponiveis() {
       price: "$900",
       imageUrl: owl,
     },
+    {
+      id: 3,
+      name: "Barn Owl",
+      description:
+        "Known for its distinctive face and silent flight, perfect for novice trainers.",
+      price: "$900",
+      imageUrl: owl,
+    },
+    {
+      id: 3,
+      name: "Barn Owl",
+      description:
+        "Known for its distinctive face and silent flight, perfect for novice trainers.",
+      price: "$900",
+      imageUrl: owl,
+    },
+    {
+      id: 3,
+      name: "Barn Owl",
+      description:
+        "Known for its distinctive face and silent flight, perfect for novice trainers.",
+      price: "$900",
+      imageUrl: owl,
+    },
   ];
 
   return (
@@ -48,7 +72,7 @@ export default function AvesDisponiveis() {
       <CContainer className="aves-container">
         <CRow>
           {birds.map((bird) => (
-            <CCol md={4} key={bird.id}>
+            <CCol md={3} key={bird.id} className="my-2">
               <CCard>
                 <CCardImage orientation="top" src={bird.imageUrl} />
                 <CCardBody>

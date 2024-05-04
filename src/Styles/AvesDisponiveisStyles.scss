@@ -3,34 +3,31 @@ $gold: #daa520;
 $hover-dark: #414036;
 $cream: #f5f5dc;
 $text-dark: #333;
-$color-start: #2c281e; 
-$color-end: #86681b; 
-
+$color-start: #2c281e;
+$color-end: #86681b;
 
 .available-whole {
   margin: 0;
   padding: 0;
-   background-image: url(../assets/clearbg.png);
-   background-repeat: no-repeat;
-   background-size: cover;
- }
-
-.aves-container {
-  
-  color: $gold;
-  padding: 3rem;
-  height: 100vh; 
-  width: 100vw;
-  overflow: auto; 
+  background-image: url(../assets/clearbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
+.aves-container {
+  color: $gold;
+  padding: 3rem;
+  height: 100%;
+  width: 100vw;
+  overflow: auto;
+}
 
 .card {
   background-color: $background-dark;
   color: $gold;
   border: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  height: 100%; 
+  height: 100%;
   &:hover {
     background-color: $hover-dark;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.75);
@@ -43,12 +40,12 @@ $color-end: #86681b;
 
 .card-text {
   color: $cream;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
 
 .card-image {
   width: 100%;
-  height: 200px; 
+  height: 200px;
   object-fit: cover;
 }
 
@@ -68,9 +65,8 @@ $color-end: #86681b;
   flex-direction: column;
   justify-content: space-between;
   height: calc(100% - 200px);
-  min-height: 300px; 
+  min-height: 300px;
 }
-
 
 @media (max-width: 768px) {
   .card-image {
