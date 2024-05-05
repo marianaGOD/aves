@@ -7,8 +7,9 @@ $cream: #f5f5dc;
   background-image: url("../assets/corujabg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding: 2rem;
-  min-height: 100vh;
+  height: calc(100vh - 116px); // 116px é a heigth da navbar (excepto em mobile < 560px de width)
   min-width: 100%;
   overflow: hidden;
 
