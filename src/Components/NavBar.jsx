@@ -27,13 +27,17 @@ const Navbar = () => {
             <CNavLink href="/">Home</CNavLink>
           </CNavItem>
           <CDropdown variant="nav">
-            <CDropdownToggle color="secondary">Serviços</CDropdownToggle>
+            <CDropdownToggle color="secondary" className="btn-services">
+              Serviços
+            </CDropdownToggle>
             <CDropdownMenu>
               <CDropdownItem href="/controloavifauna">
                 Controlo de Avifauna
               </CDropdownItem>
               <CDropdownItem href="/eventos">Eventos & Presenças</CDropdownItem>
-              <CDropdownItem href="/instalações">Aluguer de Instalações para Aves</CDropdownItem>
+              <CDropdownItem href="/instalações">
+                Aluguer de Instalações para Aves
+              </CDropdownItem>
             </CDropdownMenu>
           </CDropdown>
           <CNavItem>
