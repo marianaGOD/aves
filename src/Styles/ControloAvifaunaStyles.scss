@@ -72,6 +72,9 @@ $cream: #f5f5dc;
         .accordion-button {
           color: $cream;
           background-color: rgba($background-dark, 0.85);
+           &::after{
+            background-image: url("../assets/adown.png") !important;
+          }
           &:focus {
             border-color: $gold;
             box-shadow: none;
