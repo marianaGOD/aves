@@ -13,10 +13,6 @@ import "../Styles/HomePageStyles.scss";
 const HomePage = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const toggleModal = () => {
-    setIsModalVisible(!isModalVisible);
-  };
-
   return (
     <div>
       <CContainer fluid className="homepage-hero">
@@ -30,14 +26,14 @@ const HomePage = () => {
           </i>
         </h6>
         <i>Branquinho da Fonseca</i>
-        <CButton color="light" onClick={toggleModal}>
+        <CButton color="light" onClick={() => setIsModalVisible(true)}>
           Saiba Mais
         </CButton>
       </CContainer>
 
       <CModal
         visible={isModalVisible}
-        onClose={toggleModal}
+        onClose={() => setIsModalVisible(false)}
         alignment="center"
         className="contact-modal"
       >
