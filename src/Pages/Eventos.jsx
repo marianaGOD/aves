@@ -128,7 +128,7 @@ export default function Eventos() {
               </li>
             </ul>
             <br />
-            <CButton color="light" onClick={toggleModal}>
+            <CButton color="light" onClick={() => setIsModalVisible(true)}>
               Pack Casamentos
             </CButton>
           </CAccordionBody>
@@ -186,7 +186,11 @@ export default function Eventos() {
         </CAccordionItem>
       </CAccordion>
 
-      <CModal visible={isModalVisible} onClose={toggleModal} alignment="center">
+      <CModal
+        visible={isModalVisible}
+        onClose={() => setIsModalVisible(false)}
+        alignment="center"
+      >
         <CModalHeader>
           <CModalTitle></CModalTitle>
         </CModalHeader>
@@ -199,7 +203,7 @@ export default function Eventos() {
           />
         </CModalBody>
       </CModal>
-      
+
       <CContainer className="aves-container">
         <h2>Aves Disponíveis para Eventos</h2>
         <CRow>

@@ -81,7 +81,7 @@ export default function ControloAvifauna() {
                 meio ambiente envolvente e as restantes espécies que coabitem na
                 área, nem interferem nas atividades humanas.
               </p>
-              <CButton color="light" onClick={toggleModal}>
+              <CButton color="light" onClick={() => setIsModalVisible(true)}>
                 Contacte-nos
               </CButton>
             </CAccordionBody>
@@ -91,7 +91,7 @@ export default function ControloAvifauna() {
         {/* Modal */}
         <CModal
           visible={isModalVisible}
-          onClose={toggleModal}
+          onClose={() => setIsModalVisible(false)}
           alignment="center"
           className="contact-modal"
         >

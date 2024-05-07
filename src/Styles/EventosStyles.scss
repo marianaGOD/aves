@@ -12,7 +12,7 @@ html, body {
   color: $cream;
  background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
   padding: 2rem;
-  height: calc(100vh - 116px); // 116px é a heigth da navbar (excepto em mobile < 560px de width)
+  //height: calc(100vh - 116px); // 116px é a heigth da navbar (excepto em mobile < 560px de width)
   min-width: 100%;
   
   text-align:justify;
