@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   CContainer,
   CRow,
@@ -8,10 +8,21 @@ import {
   CAccordionItem,
   CAccordionHeader,
   CAccordionBody,
+  CModal,
+  CModalHeader,
+  CModalTitle,
+  CModalBody,
+  CModalFooter,
 } from "@coreui/react";
-import "../Styles/ControloAvifaunaStyles.scss"; 
+import "../Styles/ControloAvifaunaStyles.scss";
 
 export default function ControloAvifauna() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const toggleModal = () => {
+    setIsModalVisible(!isModalVisible);
+  };
+
   return (
     <div className="controlo-avifauna">
       <CContainer>
@@ -23,7 +34,7 @@ export default function ControloAvifauna() {
               gaivotas, pombos, estorninhos, entre outros, em espaços
               habitacionais e de recreação apresenta um problema de saúde
               pública e de manutenção das condições higieno-sanitárias dos
-              espaços. Desta forma, vimos por este meio apresentar uma solução:
+              espaços. Desta forma, vimos por este meio apresentar uma solução.
             </p>
           </CCol>
         </CRow>
@@ -38,7 +49,7 @@ export default function ControloAvifauna() {
                 invasivas e sobrepovoadas de forma sustentável, sem recurso a
                 pesticidas e sem efeitos adversos para o meio ambiente.
               </p>
-              <p>Vantagens:</p>
+              <p style={{ color: "#daa520" }}>Vantagens:</p>
               <ul>
                 <li>Permite a integridade dos campos e do meio ambiente</li>
                 <li>
@@ -70,10 +81,38 @@ export default function ControloAvifauna() {
                 meio ambiente envolvente e as restantes espécies que coabitem na
                 área, nem interferem nas atividades humanas.
               </p>
-              <CButton color="light">Contacte-nos</CButton>
+              <CButton color="light" onClick={toggleModal}>
+                Contacte-nos
+              </CButton>
             </CAccordionBody>
           </CAccordionItem>
         </CAccordion>
+
+        {/* Modal */}
+        <CModal
+          visible={isModalVisible}
+          onClose={toggleModal}
+          alignment="center"
+          className="contact-modal"
+        >
+          <CModalHeader className="modal-header">
+            <CModalTitle>Contactos</CModalTitle>
+          </CModalHeader>
+          <CModalBody className="modal-body">
+            <ul>
+              <li>
+                📧
+                <a href="mailto:avesoeste@gmail.com">avesoeste@gmail.com</a>
+              </li>
+              <li>
+                💬 <a href="https://wa.me/913919838">913 919 838</a>
+              </li>
+            </ul>
+          </CModalBody>
+          <CModalFooter className="c-modal-footer">
+            <i>chamada para a rede móvel nacional</i>
+          </CModalFooter>
+        </CModal>
       </CContainer>
     </div>
   );

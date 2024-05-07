@@ -1,0 +1,33 @@
+.aluguer-instalacoes {
+  background-color: #2c281e;
+  color: #f5f5dc;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+
+  h1, h2 {
+    color: #daa520;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  .access, .pricing, .included, .extras {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #414036;
+    border-radius: 5px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

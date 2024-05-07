@@ -12,6 +12,12 @@ $cream: #f5f5dc;
   height: calc(100vh - 116px); // 116px é a heigth da navbar (excepto em mobile < 560px de width)
   min-width: 100%;
   overflow: hidden;
+  text-align:justify;
+
+  h1{
+    color: $gold;
+    text-align: center;
+  }
 
   h2{
     color: $gold;
@@ -47,6 +53,71 @@ $cream: #f5f5dc;
   margin-bottom: 20px;
 }
 
+.contact-modal {
+  border-radius: 16px;
+  .modal-header {
+    background-color: #daa520; // Rich gold color for a striking header
+    color: #fff; // White text for high contrast and readability
+    padding: 15px 25px; // Adequate padding for a spacious look
+    border-bottom: 2px solid #c9b458; // Subtle border to visually separate from body
+
+    .c-modal-title {
+      font-family: 'Arial', sans-serif; // Ensures typography consistency
+      font-weight: bold; // Bold title for emphasis
+      font-size: 1.5rem; // Larger font size for clear hierarchy
+    }
+  }
+
+  .modal-body {
+    background-color: #ffffff; // White background for a clean, crisp feel
+    color: #333; // Dark text for excellent contrast
+    padding: 20px 25px; // Generous padding for content breathing room
+    font-size: 1rem; // Standard font size for readability
+    text-align: center; // Aligns the button to the right for a clean look
+
+    ul {
+      padding: 0;
+      margin-top: 10px; // Top margin for better visual separation from text
+      list-style-type: none; // No list markers for a clean design
+
+      li {
+        margin-bottom: 15px; // Space between items to prevent feeling cramped
+        display: flex;
+        align-items: center;
+        gap: 10px; // Spacing between icon and text for clarity
+
+        a {
+          color: #daa520; // Gold color links to match the header
+          font-weight: 600; // Slightly bold for emphasis
+          text-decoration: none; // No underline for a cleaner look
+
+          &:hover, &:focus {
+            text-decoration: underline; // Underline on hover/focus for interactivity
+            color: #b38600; // Darker gold on hover for depth
+          }
+        }
+      }
+    }
+  }
+
+  .c-modal-footer {
+    background-color: #f8f8f8; // Light grey background to distinguish from body
+    padding: 10px 20px; // Uniform padding for aesthetic consistency
+    border-top: 1px solid #dcdcdc; // Light border for a subtle separation
+    text-align: right; // Aligns the button to the right for a clean look
+
+    .c-button {
+      background-color: #daa520; // Matching the header for design consistency
+      color: #fff; // White text for visibility
+      border-color: #daa520; // Ensures the border is not distracting
+
+      &:hover {
+        background-color: #b38600; // Darker on hover for interactive feel
+        border-color: #b38600; // Consistent border color change on hover
+      }
+    }
+  }
+}
 
 @media (max-width: 768px) {
   .controlo-leftbox, .controlo-rightbox {

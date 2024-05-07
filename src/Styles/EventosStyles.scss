@@ -3,16 +3,24 @@ $background-dark: #2c281e;
 $gold: #daa520;
 $cream: #f5f5dc;
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
 
 .eventos-container {
   color: $cream;
-  background-image: url("../assets/aguiabg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+ background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
   padding: 2rem;
   height: calc(100vh - 116px); // 116px é a heigth da navbar (excepto em mobile < 560px de width)
   min-width: 100%;
-  overflow: hidden;
+  
+  text-align:justify;
+
+  h1{
+    color: $gold;
+    text-align: center;
+  }
 
 
   .accordion {
@@ -87,6 +95,19 @@ $cream: #f5f5dc;
   padding: 20px;
 }
 
+/* Styles for image zoom effect on hover inside the modal */
+.zoomable-image {
+    transition: transform 0.3s ease-in-out; // Smooth transition for zoom effect
+
+    &:hover {
+        transform: scale(2); 
+        cursor: zoom-in;
+    }
+}
+
+a {
+        color: #daa520; // Gold color links
+        text-decoration: none; }
 
 @media (max-width: 768px) {
   .controlo-leftbox, .controlo-rightbox {

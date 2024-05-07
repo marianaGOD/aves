@@ -1,12 +1,13 @@
 import React from "react";
-import "../Styles/MaterialFalcoariaStyles.scss";
+import "../Styles/AvesRapinaStyles.scss";
 
-export default function MaterialFalcoaria() {
+export default function AvesRapina() {
   return (
-    <div className="material-falcoaria">
-      <h1>Material de Falcoaria</h1>
+    <div className="aves-rapina">
+      <h1>Aves de Rapina</h1>
       <p>
-        Vendemos diverso material de falcoaria. Solicite o catálogo através do:
+        Somos criadores certificados pelo ICNF. Solicite aves disponíveis
+        através do:
       </p>
       <ul>
         <li>
