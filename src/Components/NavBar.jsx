@@ -44,9 +44,6 @@ const Navbar = () => {
             <CNavLink href="/avesrapina">Criação & Venda de Aves de Rapina</CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="/available">Aves Disponíveis</CNavLink>
-          </CNavItem>
-          <CNavItem>
             <CNavLink href="/material">Material de Falcoaria</CNavLink>
           </CNavItem>
           <CNavItem>

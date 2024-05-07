@@ -9,7 +9,7 @@ $text-color: #fff;
   height: calc(100vh - 116px); // 116px é a heigth da navbar (excepto em mobile < 560px de width)
   width: 100%; 
   padding: 2rem;
-  background-image: url("../assets/falcaobg1.png");
+  background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
   background-repeat: no-repeat;
   background-size: cover;
   padding-right: 30%;
@@ -88,6 +88,28 @@ $text-color: #fff;
       }
     }
   }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%); // Start from fully left, out of view
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0); // End at its natural position
+    opacity: 1;
+  }
+}
+
+.background-image {
+  position: absolute;
+  left: 0; // Align the image to the left edge of the container
+  top: 50%; // Center it vertically
+  transform: translateY(-50%); // Adjust vertically to center it
+  width: auto; // Maintain original image width
+  max-height: 100%; // Limit the height to not take the full container height
+  animation: slideInFromLeft 1.5s ease-out forwards; // Apply the horizontal slide-in animation
+  z-index: 1; // Ensure it's behind other content
 }
 
 @media (max-width: 768px) {

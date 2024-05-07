@@ -9,6 +9,7 @@ import {
   CModalFooter,
 } from "@coreui/react";
 import "../Styles/HomePageStyles.scss";
+import hpbird from "../assets/avehomepage1.png"
 
 const HomePage = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -18,7 +19,12 @@ const HomePage = () => {
   };
 
   return (
-    <div>
+    <div className="homepage-container">
+      <img
+        src={hpbird}
+        alt="Decorative background"
+        className="background-image"
+      />
       <CContainer fluid className="homepage-hero">
         <h2>Aves do Oeste by TM</h2>
         <h6>
