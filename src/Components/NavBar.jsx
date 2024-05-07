@@ -35,7 +35,7 @@ const Navbar = () => {
                 Controlo de Avifauna
               </CDropdownItem>
               <CDropdownItem href="/eventos">Eventos & Presenças</CDropdownItem>
-              <CDropdownItem href="/instalações">
+              <CDropdownItem href="/aluguer">
                 Aluguer de Instalações para Aves
               </CDropdownItem>
             </CDropdownMenu>
@@ -44,16 +44,16 @@ const Navbar = () => {
             <CNavLink href="/available">Aves Disponíveis</CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="/about">Material de Falcoaria</CNavLink>
+            <CNavLink href="/material">Material de Falcoaria</CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="/about">Galeria</CNavLink>
+            <CNavLink href="/galeria">Galeria</CNavLink>
           </CNavItem>
           <CNavItem>
             <CNavLink href="/about">Sobre Nós</CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink href="/contact">Contactos</CNavLink>
+            <CNavLink href="/contactos">Contactos</CNavLink>
           </CNavItem>
         </CNavbarNav>
       </CContainer>

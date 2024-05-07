@@ -1,0 +1,43 @@
+$background-dark: #2c281e;
+$gold: #daa520;
+$hover-dark: #414036;
+$cream: #f5f5dc;
+$text-dark: #333;
+$color-start: #2c281e;
+$color-end: #86681b;
+
+.contact-container {
+  display: flex;
+}
+
+.contact-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  background-color: $background-dark;
+  color: $gold;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    background-color: $hover-dark;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.contact-text {
+  text-align: center;
+  padding: 3rem;
+  height: 100%;
+  width: 100vw;
+  overflow: auto;
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    width: 100%;
+  }
+}
+
