@@ -110,7 +110,9 @@ export default function ControloAvifauna() {
             </ul>
           </CModalBody>
           <CModalFooter className="c-modal-footer">
-            <i>chamada para a rede móvel nacional</i>
+            <i style={{ fontSize: "0.75em" }}>
+              chamada para a rede móvel nacional
+            </i>
           </CModalFooter>
         </CModal>
       </CContainer>

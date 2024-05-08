@@ -1,48 +1,86 @@
 .aves-rapina {
-  background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%); // Subtle gradient background
+    background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
   color: #2c281e; // Dark text color for contrast
   padding: 20px;
   font-family: 'Arial', sans-serif; // Ensuring font consistency
   border-radius: 8px; // Soft rounded corners for a modern look
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
-  margin: auto; // Centering if in a larger container
-  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // Enhanced shadow for more depth
+  margin: auto; // Centering in a larger container
   width: 100%;
+  overflow: hidden; // Prevents overflow artifacts
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .info-box {
     background: linear-gradient(to right, #ffffff, #f9f9f9); // Subtle gradient from white to light gray
     border-radius: 10px; // Rounded corners
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Soft shadow for depth
-    padding: 20px; // Internal spacing
-    margin: 20px auto; // Centering and spacing from other elements
-    max-width: 600px; // Maximum width for better readability
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); // Slightly deeper shadow for distinctiveness
+    padding: 20px;
+    margin-bottom: 20px; // Provides space between sections
+    max-width: 800px; // Adjust width for better content distribution
+    width: 100%; // Responsive width
 
     h1 {
-      color: #daa520; // Gold color for the heading
-      margin-bottom: 1rem; // Space below the heading
+      color: #daa520; // Gold color for headings to stand out
+      font-size: 2rem; // Larger font size for headings
+      text-align: center; // Center align the title
     }
 
     p {
-      color: #333; // Dark color for text for readability
-      margin-bottom: 1rem; // Space below the paragraph
+      text-align: center;
+      color: #333; // Darker color for better readability
+      line-height: 1.5; // Improved line spacing
     }
 
     ul {
-      list-style: none; // No bullets
+      list-style: none; // Clean list without bullets
       padding: 0;
 
       li {
-        margin-bottom: 10px; // Space between list items
+        margin-bottom: 10px; // Consistent spacing for list items
 
         a {
-          color: #daa520; // Gold color for links
-          text-decoration: none; // No underline
+          color: #daa520; // Gold link color for harmony with headings
+          text-decoration: none; // Clean look without underline
 
           &:hover {
-            text-decoration: underline; // Underline on hover
+            text-decoration: underline; // Underline on hover for interactivity
           }
         }
       }
+    }
+  }
+
+  .aves-container {
+    width: 100%; // Ensures container uses full available width
+    padding: 0 20px; // Padding for internal spacing
+
+    .my-2 {
+      margin-bottom: 20px; // Provides consistent spacing between cards
+    }
+
+    .card {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25); // More prominent shadow for cards
+
+      .card-body {
+        padding: 10px; // Reduced padding inside cards for a tighter layout
+        .btn {
+          background-color: #daa520; // Unified button color
+          color: white; // Ensures text is legible
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .aves-rapina {
+    padding: 10px; // Less padding on smaller devices
+
+    .info-box, .aves-container {
+      padding: 10px;
+      max-width: 100%; // Full width on small screens for better usability
     }
   }
 }

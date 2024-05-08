@@ -1,33 +1,160 @@
+$background-dark: #2c281e;
+$gold: #daa520;
+$cream: #f5f5dc;
+
 .aluguer-instalacoes {
-  background-color: #2c281e;
-  color: #f5f5dc;
-  font-family: Arial, sans-serif;
+  color: $cream;
+  background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  height: 100%;
+  min-width: 100%;
+  text-align: justify;
+
+  .aluguer-title {
+  background-color: rgba($background-dark, 0.75);
+  border-radius: 16px;
+  margin-bottom: 2%;
   padding: 20px;
-
-  h1, h2 {
-    color: #daa520;
+  text-align: center;
   }
 
-  p {
-    line-height: 1.6;
+  .access {
+  background-color: rgba($background-dark, 0.75);
+  border-radius: 16px;
+  margin-bottom: 2%;
+  padding: 20px;
+  display: flex; // Enables flexbox
+  flex-direction: column; // Stack children vertically
+  align-items: center; // Center-align items horizontally
+  justify-content: center; // Center-align items vertically
+  text-align: center; // Ensures text is centered as well
+
+  img {
+    max-height: 500px; // Optional: Constraint height if necessary
+    width: auto; // Maintain aspect ratio
+    margin-bottom: 20px; // Adds space between the image and the text
+  }
+}
+
+  .pricing{
+    background-color: rgba($background-dark, 0.75);
+  border-radius: 16px;
+  margin-bottom: 2%;
+  padding: 20px;
   }
 
-  .access, .pricing, .included, .extras {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #414036;
-    border-radius: 5px;
+  h1 {
+    color: $gold;
+    text-align: center;
+  }
+
+  h2 {
+    color: $gold;
   }
 
   ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+
+    li {
+      padding-left: 20px;
+      background-image: url('../assets/ulfalcon.png');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 16px 16px;
+      line-height: 20px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.controlo-toptitle {
+  background-color: rgba($background-dark, 0.75);
+  border-radius: 16px;
+  margin-bottom: 2%;
+  padding: 20px;
+}
+
+.controlo-leftbox, .controlo-rightbox {
+  background-color: rgba($background-dark, 0.75);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-modal {
+  border-radius: 16px;
+
+  .modal-header {
+    background-color: $gold;
+    color: #fff;
+    padding: 15px 25px;
+    border-bottom: 2px solid darken($gold, 10%);
+
+    .c-modal-title {
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
   }
 
-  li {
-    margin-bottom: 10px;
-    &:last-child {
-      margin-bottom: 0;
+  .modal-body {
+    background-color: #ffffff;
+    color: $background-dark;
+    padding: 20px 25px;
+    font-size: 1rem;
+    text-align: center;
+
+    ul {
+      padding: 0;
+      margin-top: 10px;
+
+      li {
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        a {
+          color: $gold;
+          font-weight: 600;
+          text-decoration: none;
+
+          &:hover, &:focus {
+            text-decoration: underline;
+            color: darken($gold, 10%);
+          }
+        }
+      }
     }
+  }
+
+  .c-modal-footer {
+    background-color: #f8f8f8;
+    padding: 10px 20px;
+    border-top: 1px solid #dcdcdc;
+    text-align: right;
+
+    .c-button {
+      background-color: $gold;
+      color: #fff;
+      border-color: $gold;
+
+      &:hover {
+        background-color: darken($gold, 10%);
+        border-color: darken($gold, 10%);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .controlo-leftbox, .controlo-rightbox {
+    margin-bottom: 10px;
   }
 }

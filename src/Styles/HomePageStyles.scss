@@ -6,14 +6,13 @@ $text-color: #fff;
   justify-content: center; 
   align-items: flex-end; 
   text-align: right; 
-  height: calc(100vh - 116px); // 116px é a heigth da navbar (excepto em mobile < 560px de width)
+  height: 100vh; // 116px é a heigth da navbar (excepto em mobile < 560px de width)
   width: 100%; 
   padding: 2rem;
   background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
   background-repeat: no-repeat;
   background-size: cover;
   padding-right: 30%;
-   
 
   h2 {
     font-size: 5rem;
@@ -103,13 +102,29 @@ $text-color: #fff;
 
 .background-image {
   position: absolute;
-  left: 0; // Align the image to the left edge of the container
-  top: 50%; // Center it vertically
+  left: -5%; // Align the image to the left edge of the container
+  top: 25%; // Center it vertically
   transform: translateY(-50%); // Adjust vertically to center it
   width: auto; // Maintain original image width
   max-height: 100%; // Limit the height to not take the full container height
   animation: slideInFromLeft 1.5s ease-out forwards; // Apply the horizontal slide-in animation
   z-index: 1; // Ensure it's behind other content
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text-animate {
+  opacity: 0; // Start with text invisible
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: var(--animation-delay, 0s); // Use a CSS variable for delay
 }
 
 @media (max-width: 768px) {
@@ -117,5 +132,10 @@ $text-color: #fff;
     align-items: center; 
     text-align: center;
     padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .background-image {
+    display: none; // Hide the image on small screens
   }
 }

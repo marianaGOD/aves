@@ -69,19 +69,21 @@ export default function AvesRapina() {
   return (
     <div className="aves-rapina">
       <div className="info-box">
-        {" "}
-        {/* Added this wrapper div */}
         <h1>Aves de Rapina</h1>
         <p>
-          Somos criadores certificados pelo ICNF. Solicite aves disponíveis
-          através do:
+          Somos criadores certificados pelo <br />
+          <span style={{ fontWeight: "bold", color: "#daa520" }}>
+            Instituto da Conservação da Natureza e das Florestas{" "}
+          </span>
+          . <br />
+          Solicite aves disponíveis através do:
         </p>
         <ul>
           <li>
-            Email: <a href="mailto:avesoeste@gmail.com">avesoeste@gmail.com</a>
+            📧 <a href="mailto:avesoeste@gmail.com">avesoeste@gmail.com</a>
           </li>
           <li>
-            WhatsApp: <a href="https://wa.me/913919838">913 919 838</a>
+            💬 <a href="https://wa.me/913919838">913 919 838</a>
           </li>
         </ul>
       </div>

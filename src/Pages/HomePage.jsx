@@ -9,7 +9,7 @@ import {
   CModalFooter,
 } from "@coreui/react";
 import "../Styles/HomePageStyles.scss";
-import hpbird from "../assets/avehomepage1.png"
+import hpbird from "../assets/corujahp2.png"
 
 const HomePage = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -22,17 +22,27 @@ const HomePage = () => {
         className="background-image"
       />
       <CContainer fluid className="homepage-hero">
-        <h2>Aves do Oeste by TM</h2>
-        <h6>
-          <i>
+        <h2 className="text-animate" style={{ "--animation-delay": "0.3s" }}>
+          Aves do Oeste by TM
+        </h2>
+        <h6 className="text-animate" style={{ "--animation-delay": "0.6s" }}>
+          <i className="text-animate" style={{ "--animation-delay": "0.9s" }}>
             Um pássaro a voar: é ir com os olhos a voar com ele;
             <br /> ir sobre os montes, sobre os rios, sobre os mares;
             <br /> dar a volta ao mundo e continuar;
             <br /> é ter um motivo de viver — é não ter chegado ainda.
           </i>
         </h6>
-        <i>Branquinho da Fonseca</i>
-        <CButton color="light" onClick={() => setIsModalVisible(true)}>
+        <i className="text-animate" style={{ "--animation-delay": "0.9s" }}>
+          Branquinho da Fonseca
+        </i>
+        <br />
+        <CButton
+          className="text-animate"
+          style={{ "--animation-delay": "1.2s" }}
+          color="light"
+          onClick={() => setIsModalVisible(true)}
+        >
           Saiba Mais
         </CButton>
       </CContainer>
@@ -58,7 +68,9 @@ const HomePage = () => {
           </ul>
         </CModalBody>
         <CModalFooter className="c-modal-footer">
-          <i>chamada para a rede móvel nacional</i>
+          <i style={{ fontSize: "0.75em" }}>
+            chamada para a rede móvel nacional
+          </i>
         </CModalFooter>
       </CModal>
     </div>
