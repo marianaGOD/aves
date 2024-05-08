@@ -1,18 +1,51 @@
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 20px;
-  background-color: #f5f5dc; // Cream background
+  background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
+  width: 100%;
+  height: 100vh;
 
   .photo {
-    border: 5px solid #daa520; // Gold border for photos
+    border: 5px solid #daa520; 
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     
     img {
       width: 100%;
-      height: auto;
       display: block;
     }
+  }
+
+  .carousel-container {
+    width: 100%; 
+    max-height: 75%; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    .ccarousel {
+      width: 100%;
+      height: 100%;
+
+      .ccarousel-item .cimage {
+        max-width: 90%; 
+        max-height: 600px; 
+        object-fit: contain; 
+      }
+    }
+  }
+
+  .text-box {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%; 
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
   }
 }

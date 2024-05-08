@@ -95,9 +95,9 @@ html, body {
   padding: 20px;
 }
 
-/* Styles for image zoom effect on hover inside the modal */
+
 .zoomable-image {
-    transition: transform 0.3s ease-in-out; // Smooth transition for zoom effect
+    transition: transform 0.3s ease-in-out; 
 
     &:hover {
         transform: scale(2); 
@@ -106,7 +106,7 @@ html, body {
 }
 
 a {
-        color: #daa520; // Gold color links
+        color: #daa520; 
         text-decoration: none; }
 
 @media (max-width: 768px) {

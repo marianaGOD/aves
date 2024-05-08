@@ -1,31 +1,55 @@
 .material-falcoaria {
-  background-color: #f5f5dc; // Cream background
-  color: #2c281e; // Dark text color
+  background-image: url("../assets/materialbg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #2c281e; 
   padding: 20px;
   font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 
-  h1 {
-    color: #daa520; // Gold color for headings
-  }
+  .materialtext-container {
+    background: linear-gradient(
+      to right,
+      #ffffff,
+      #f9f9f9
+    ); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 30px; 
+    margin-top: 10%; 
+    max-width: 600px; 
+    width: 100%; 
+    text-align: center; 
+    align-self:self-start; 
 
-  p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
+    h1 {
+      color: #daa520; 
+      margin-bottom: 20px; 
+      font-size: 2rem; 
+    }
 
-  ul {
-    list-style: none;
-    padding: 0;
+    p {
+      font-size: 1rem;
+      line-height: 1.8; 
+    }
 
-    li {
-      margin-bottom: 10px;
+    ul {
+      list-style: none;
+      padding: 0;
 
-      a {
-        color: #daa520; // Gold color links
-        text-decoration: none;
+      li {
+        margin-bottom: 15px; 
 
-        &:hover {
-          text-decoration: underline;
+        a {
+          color: #daa520; 
+          text-decoration: none; 
+
+          &:hover {
+            text-decoration: underline; 
+          }
         }
       }
     }
