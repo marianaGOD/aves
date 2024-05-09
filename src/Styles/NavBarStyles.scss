@@ -66,3 +66,64 @@
     color: #ffffff;
   }
 }
+
+@media (max-width: 768px) { /* Adjust this value based on your design requirements */
+  .navbar-title {
+    display: none;
+  }
+
+  .navbar-toggler {
+    background-color: #daa520;
+    border: none;
+  }
+
+  .navbar-toggler:active,
+  .navbar-toggler:focus {
+    background-color: #daa520; /* Ensure consistency on click */
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.navbar-logo {
+  height: 90px;
+  width: auto;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-right: 5%; /* Adjust based on layout */
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.dropdown-menu {
+  position: static;
+  float: none;
+}
+
+.dropdown-toggle {
+  background-color: #2c281e;
+  color: #daa520;
+
+  &:hover, &:focus, &:active {
+    background-color: #414036;
+    color: #ffffff;
+  }
+  
+  &[aria-expanded="true"] {
+    background-color: #364026;
+    color: #ffffff;
+  }
+}

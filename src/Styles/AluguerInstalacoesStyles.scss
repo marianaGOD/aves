@@ -3,57 +3,35 @@ $gold: #daa520;
 $cream: #f5f5dc;
 
 .aluguer-instalacoes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: $cream;
   background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding: 2rem;
-  height: 100%;
+  height: auto;
   min-width: 100%;
-  text-align: justify;
 
-  .aluguer-title {
-  background-color: rgba($background-dark, 0.75);
-  border-radius: 16px;
-  margin-bottom: 2%;
-  padding: 20px;
-  text-align: center;
+  .aluguer-title, .access, .pricing {
+    background-color: rgba($background-dark, 0.75);
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    width: 100%; // Full width on mobile
+    margin-bottom: 2%;
   }
 
-  .access {
-  background-color: rgba($background-dark, 0.75);
-  border-radius: 16px;
-  margin-bottom: 2%;
-  padding: 20px;
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center; 
-  text-align: center; 
+  h1, h2 {
+    color: $gold;
+  }
 
   img {
-    max-height: 500px; 
-    width: auto; 
-    margin-bottom: 20px; 
-  }
-}
-
-  .pricing{
-    background-color: rgba($background-dark, 0.75);
-  border-radius: 16px;
-  margin-bottom: 2%;
-  padding: 20px;
-  }
-
-  h1 {
-    color: $gold;
-    text-align: center;
-  }
-
-  h2 {
-    color: $gold;
+    max-width: 100%; // Ensures image is responsive
+    height: auto;
+    margin-bottom: 20px;
   }
 
   ul {
@@ -71,90 +49,34 @@ $cream: #f5f5dc;
       margin-bottom: 5px;
     }
   }
-}
 
-.controlo-toptitle {
-  background-color: rgba($background-dark, 0.75);
-  border-radius: 16px;
-  margin-bottom: 2%;
-  padding: 20px;
-}
-
-.controlo-leftbox, .controlo-rightbox {
-  background-color: rgba($background-dark, 0.75);
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-.contact-modal {
-  border-radius: 16px;
-
-  .modal-header {
-    background-color: $gold;
-    color: #fff;
-    padding: 15px 25px;
-    border-bottom: 2px solid darken($gold, 10%);
-
-    .c-modal-title {
-      font-family: 'Arial', sans-serif;
-      font-weight: bold;
-      font-size: 1.5rem;
-    }
-  }
-
-  .modal-body {
-    background-color: #ffffff;
-    color: $background-dark;
-    padding: 20px 25px;
-    font-size: 1rem;
+  .small-letters {
+    font-size: x-small;
     text-align: center;
-
-    ul {
-      padding: 0;
-      margin-top: 10px;
-
-      li {
-        margin-bottom: 15px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-
-        a {
-          color: $gold;
-          font-weight: 600;
-          text-decoration: none;
-
-          &:hover, &:focus {
-            text-decoration: underline;
-            color: darken($gold, 10%);
-          }
-        }
-      }
-    }
-  }
-
-  .c-modal-footer {
-    background-color: #f8f8f8;
-    padding: 10px 20px;
-    border-top: 1px solid #dcdcdc;
-    text-align: right;
-
-    .c-button {
-      background-color: $gold;
-      color: #fff;
-      border-color: $gold;
-
-      &:hover {
-        background-color: darken($gold, 10%);
-        border-color: darken($gold, 10%);
-      }
-    }
+    background-color: $background-dark;
+    color: $cream;
   }
 }
 
 @media (max-width: 768px) {
-  .controlo-leftbox, .controlo-rightbox {
-    margin-bottom: 10px;
+  .aluguer-instalacoes {
+    flex-direction: column;
+    align-items: center; // Ensures center alignment on mobile
+    padding: 1rem;
+  }
+
+  .aluguer-title, .access, .pricing, .accordion-item {
+    width: 100%; // Ensures full width usage on mobile
+    padding: 15px;
+    margin-bottom: 10px; // Reduced margin for compact appearance
+  }
+
+  .pricing h2 {
+    margin-top: 20px; // Adds space above prices section for clarity
+  }
+
+  .access img {
+    max-height: 200px; // Smaller height on mobile
+    max-width: 80%; // Reduces width to 80% on mobile
   }
 }

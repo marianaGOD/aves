@@ -24,6 +24,7 @@
     h1 {
       color: #daa520; 
       margin-bottom: 20px;
+      font-size: 2rem; // Slightly larger for emphasis, adjust if too large on mobile
     }
 
     p {
@@ -32,6 +33,27 @@
       margin-bottom: 20px;
       &:last-child {
         margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sobre-nos {
+    height: auto; // Adjust height for mobile to ensure it fits content
+    padding: 10px; // Reduce padding for more space
+
+    .content-box {
+      padding: 20px; // Slightly reduce padding for mobile
+      width: 95%; // Increase width for better use of space
+
+      h1 {
+        font-size: 1.5rem; // Reduce font size for mobile to ensure it fits well
+      }
+
+      p {
+        font-size: 0.9rem; // Reduce font size for readability on smaller screens
+        line-height: 1.6; // Adjust line height for better readability
       }
     }
   }

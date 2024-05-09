@@ -110,7 +110,9 @@ export default function AluguerInstalacoes() {
           </CAccordionBody>
         </CAccordionItem>
       </CAccordion>
-      <p>Solicite condições para alojamento de casais ou alojamento coletivo</p>
+      <p className="small-letters">
+        Solicite condições para alojamento de casais ou alojamento coletivo
+      </p>
     </div>
   );
 }

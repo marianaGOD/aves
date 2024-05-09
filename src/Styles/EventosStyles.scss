@@ -1,31 +1,28 @@
-// Define color variables
 $background-dark: #2c281e;
 $gold: #daa520;
 $cream: #f5f5dc;
 
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
 .eventos-container {
   color: $cream;
- background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
+  background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
   padding: 2rem;
-  //height: calc(100vh - 116px); // 116px é a heigth da navbar (excepto em mobile < 560px de width)
+  display: flex; // Ensures flexbox layout
+  flex-direction: column; // Stacks children vertically
+  align-items: center; // Centers children horizontally
+  justify-content: center; // Centers children vertically if needed
+  text-align: justify;
   min-width: 100%;
-  
-  text-align:justify;
 
-  h1{
+  h1, h2 {
     color: $gold;
-    text-align: center;
+    text-align: center; // Ensures titles are centered
   }
-
 
   .accordion {
     background-color: transparent;
     border: none;
+    width: 80%; // Responsive width
+    margin: auto; // This will center the accordion horizontally
 
     .accordion-item {
       background-color: rgba($background-dark, 0.85);
@@ -42,7 +39,7 @@ html, body {
           color: $cream;
           background-color: rgba($background-dark, 0.85);
 
-          &::after{
+          &::after {
             background-image: url("../assets/adown.png") !important;
           }
           &:focus {
@@ -64,12 +61,6 @@ html, body {
     }
   }
 
-
-  h2 {
-    color: $gold;
-  }
-
-
   ul {
     list-style-type: none;
     padding: 0;
@@ -87,30 +78,34 @@ html, body {
   }
 }
 
-
-.controlo-toptitle {
-  background-color: rgba($background-dark, 0.75);
-  border-radius: 16px;
-  margin-bottom: 2%;
-  padding: 20px;
-}
-
-
 .zoomable-image {
-    transition: transform 0.3s ease-in-out; 
-
-    &:hover {
-        transform: scale(2); 
-        cursor: zoom-in;
-    }
+  transition: transform 0.3s ease-in-out;
+  
+  &:hover {
+    transform: scale(2);
+    cursor: zoom-in;
+  }
 }
 
 a {
-        color: #daa520; 
-        text-decoration: none; }
+  color: #daa520;
+  text-decoration: none;
+  &:hover {
+    color: darken($gold, 10%);
+  }
+}
 
 @media (max-width: 768px) {
-  .controlo-leftbox, .controlo-rightbox {
-    margin-bottom: 10px;
+  .eventos-container, .accordion {
+    width: 100%; // Full width for smaller screens
+  }
+
+  .accordion .accordion-item .accordion-button {
+    padding: 0.5rem; // Easier to tap on a touch device
+  }
+
+  .aves-container .row .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }

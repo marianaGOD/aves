@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   CNavbar,
   CContainer,
@@ -10,52 +10,69 @@ import {
   CDropdownToggle,
   CDropdownMenu,
   CDropdownItem,
+  CNavbarToggler,
+  CCollapse,
 } from "@coreui/react";
-import "../Styles/NavBarStyles.scss"; 
-import aveslogo from "../assets/avessemfundo.png"
+import "../Styles/NavBarStyles.scss";
+import aveslogo from "../assets/avessemfundo.png";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => setIsOpen(!isOpen);
+
   return (
     <CNavbar expand="lg" colorScheme="light" className="bg-light">
       <CContainer fluid className="bg-light navbar-container">
         <CNavbarBrand href="/" className="navbar-brand">
-          <img src={aveslogo} alt="" className="navbar-logo" /> <br />
+          <img src={aveslogo} alt="" className="navbar-logo" />
           <h3 className="navbar-title">Aves do Oeste by TM</h3>
         </CNavbarBrand>
-        <CNavbarNav>
-          <CNavItem>
-            <CNavLink href="/">Home</CNavLink>
-          </CNavItem>
-          <CDropdown variant="nav">
-            <CDropdownToggle color="secondary" className="btn-services">
-              Serviços
-            </CDropdownToggle>
-            <CDropdownMenu>
-              <CDropdownItem href="/controloavifauna">
-                Controlo de Avifauna
-              </CDropdownItem>
-              <CDropdownItem href="/eventos">Eventos & Presenças</CDropdownItem>
-              <CDropdownItem href="/aluguer">
-                Aluguer de Instalações para Aves
-              </CDropdownItem>
-            </CDropdownMenu>
-          </CDropdown>
-          <CNavItem>
-            <CNavLink href="/avesrapina">Criação & Venda de Aves de Rapina</CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="/material">Material de Falcoaria</CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="/galeria">Galeria</CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="/about">Sobre Nós</CNavLink>
-          </CNavItem>
-          <CNavItem>
-            <CNavLink href="/contactos">Contactos</CNavLink>
-          </CNavItem>
-        </CNavbarNav>
+        <CNavbarToggler
+          onClick={() => setIsOpen(true)}
+          aria-label="Toggle navigation"
+          className="navbar-toggler"
+        />
+        <CCollapse visible={isOpen} className="navbar-collapse">
+          <CNavbarNav>
+            <CNavItem>
+              <CNavLink href="/">Home</CNavLink>
+            </CNavItem>
+            <CDropdown variant="nav">
+              <CDropdownToggle color="secondary" className="btn-services">
+                Serviços
+              </CDropdownToggle>
+              <CDropdownMenu>
+                <CDropdownItem href="/controloavifauna">
+                  Controlo de Avifauna
+                </CDropdownItem>
+                <CDropdownItem href="/eventos">
+                  Eventos & Presenças
+                </CDropdownItem>
+                <CDropdownItem href="/aluguer">
+                  Aluguer de Instalações para Aves
+                </CDropdownItem>
+              </CDropdownMenu>
+            </CDropdown>
+            <CNavItem>
+              <CNavLink href="/avesrapina">
+                Criação & Venda de Aves de Rapina
+              </CNavLink>
+            </CNavItem>
+            <CNavItem>
+              <CNavLink href="/material">Material de Falcoaria</CNavLink>
+            </CNavItem>
+            <CNavItem>
+              <CNavLink href="/galeria">Galeria</CNavLink>
+            </CNavItem>
+            <CNavItem>
+              <CNavLink href="/about">Sobre Nós</CNavLink>
+            </CNavItem>
+            <CNavItem>
+              <CNavLink href="/contactos">Contactos</CNavLink>
+            </CNavItem>
+          </CNavbarNav>
+        </CCollapse>
       </CContainer>
     </CNavbar>
   );
