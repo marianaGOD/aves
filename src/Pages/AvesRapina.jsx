@@ -10,6 +10,11 @@ import {
   CCol,
   CContainer,
   CRow,
+  CModal,
+  CModalHeader,
+  CModalTitle,
+  CModalBody,
+  CModalFooter,
 } from "@coreui/react";
 import { gql, useQuery } from "@apollo/client";
 
@@ -28,6 +33,7 @@ const GET_SELLING_BIRDS = gql`
 `;
 
 export default function AvesRapina() {
+  const [isModalVisible, setIsModalVisible] = useState(false);
   const { loading, error, data } = useQuery(GET_SELLING_BIRDS);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
@@ -64,12 +70,44 @@ export default function AvesRapina() {
                   <CCardTitle>{bird.title}</CCardTitle>
                   <CCardText>{bird.race}</CCardText>
                   <div>Price: {bird.price}€</div>
-                  <CButton color="light">Contacte-nos</CButton>
+                  <CButton
+                    color="light"
+                    onClick={() => setIsModalVisible(true)}
+                  >
+                    Contacte-nos
+                  </CButton>
                 </CCardBody>
               </CCard>
             </CCol>
           ))}
         </CRow>
+        {/* Modal */}
+        <CModal
+          visible={isModalVisible}
+          onClose={() => setIsModalVisible(false)}
+          alignment="center"
+          className="contact-modal"
+        >
+          <CModalHeader className="modal-header">
+            <CModalTitle>Contactos</CModalTitle>
+          </CModalHeader>
+          <CModalBody className="modal-body">
+            <ul>
+              <li>
+                📧
+                <a href="mailto:avesoeste@gmail.com">avesoeste@gmail.com</a>
+              </li>
+              <li>
+                💬 <a href="https://wa.me/913919838">913 919 838</a>
+              </li>
+            </ul>
+          </CModalBody>
+          <CModalFooter className="c-modal-footer">
+            <i style={{ fontSize: "0.75em" }}>
+              chamada para a rede móvel nacional
+            </i>
+          </CModalFooter>
+        </CModal>
       </CContainer>
     </div>
   );
