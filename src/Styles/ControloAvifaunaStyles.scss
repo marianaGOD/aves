@@ -9,7 +9,7 @@ $cream: #f5f5dc;
   background-size: cover;
   background-position: center;
   padding: 2rem;
-  height: calc(100vh - 116px); // Adjust for mobile by changing the navbar height
+  height: calc(100vh - 116px); 
   min-width: 100%;
   overflow: hidden;
   text-align: justify;
@@ -162,7 +162,7 @@ $cream: #f5f5dc;
 
 @media (max-width: 768px) {
   .controlo-avifauna {
-    height: auto; // Make sure this adapts to content height
+    height: auto; 
     padding: 1rem;
   }
 
@@ -172,6 +172,6 @@ $cream: #f5f5dc;
   }
 
   .accordion .accordion-item {
-    font-size: 0.875rem; // Smaller text in accordion for easier reading on small screens
+    font-size: 0.875rem; 
   }
 }

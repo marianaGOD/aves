@@ -129,19 +129,19 @@ $text-color: #fff;
 
 @media (max-width: 768px) {
   .homepage-hero {
-    align-items: center; // centers content horizontally
+    align-items: center;
     padding-left: 25%;
 
     h2 {
-      font-size: 3rem; // smaller font size for smaller screens
+      font-size: 3rem; 
     }
     h6 {
-      font-size: 1rem; // adjust based on your preference
+      font-size: 1rem; 
     }
   }
 
   .background-image {
-    display: none; // hides background image on smaller screens
+    display: none; 
   }
 }
 
