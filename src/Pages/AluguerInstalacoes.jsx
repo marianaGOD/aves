@@ -82,7 +82,7 @@ export default function AluguerInstalacoes() {
           </li>
         </ul>
       </div>
-      <CAccordion flush>
+      <CAccordion flush className="accordion-instalacoes">
         <CAccordionItem itemKey={1}>
           <CAccordionHeader>Extras</CAccordionHeader>
           <CAccordionBody>
