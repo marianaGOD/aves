@@ -9,7 +9,7 @@ import {
   CModalFooter,
 } from "@coreui/react";
 import "../Styles/HomePageStyles.scss";
-import hpbird from "../assets/corujahp2.png"
+import hpbird from "../assets/corujahp2_crop.png";
 
 const HomePage = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
