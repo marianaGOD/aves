@@ -6,11 +6,11 @@ import {
   CCarouselCaption,
 } from "@coreui/react";
 import "../Styles/GaleriaStyles.scss";
-import car1 from "../assets/car1.jpg";
-import car2 from "../assets/car2.jpg";
-import car3 from "../assets/car3.jpg";
-import car4 from "../assets/car4.jpg";
-import car5 from "../assets/car5.jpg";
+import car1 from "../assets/car1_crop.jpg";
+import car2 from "../assets/car2_crop.jpg";
+import car3 from "../assets/car3_crop.jpg";
+import car4 from "../assets/car4_crop.jpg";
+import car5 from "../assets/car5_crop.jpg";
 import car6 from "../assets/car6.jpg";
 import car7 from "../assets/car7.jpg";
 import car8 from "../assets/car8.jpg";
@@ -81,7 +81,7 @@ export default function Galeria() {
           {birdImages.map((image, index) => (
             <CCarouselItem key={index}>
               <CImage
-                className="d-block w-100"
+                className="d-block w-50 text-center"
                 src={image.src}
                 alt={image.alt}
               />
