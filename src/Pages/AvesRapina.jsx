@@ -69,7 +69,6 @@ export default function AvesRapina() {
                 <CCardBody>
                   <CCardTitle>{bird.title}</CCardTitle>
                   <CCardText>{bird.race}</CCardText>
-                  <div>Price: {bird.price}€</div>
                   <CButton
                     color="light"
                     onClick={() => setIsModalVisible(true)}

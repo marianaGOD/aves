@@ -161,7 +161,6 @@ export default function Eventos() {
                 <CCardBody>
                   <CCardTitle>{bird.title}</CCardTitle>
                   <CCardText>{bird.description}</CCardText>
-                  <div>Price: {bird.price}€</div>
                   <CButton
                     color="light"
                     onClick={() => setIsModalVisible(true)}

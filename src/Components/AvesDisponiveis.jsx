@@ -78,7 +78,6 @@ export default function AvesDisponiveis() {
                 <CCardBody>
                   <CCardTitle>{bird.name}</CCardTitle>
                   <CCardText>{bird.description}</CCardText>
-                  <div>Price: {bird.price}</div>
                   <CButton color="light">Contacte-nos</CButton>
                 </CCardBody>
               </CCard>
