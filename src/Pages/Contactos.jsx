@@ -30,13 +30,22 @@ export default function Contactos() {
         </div>
       </CContainer>
       <CContainer className="social-media-buttons">
-        <CButton className="social-button" href="https://facebook.com">
+        <CButton
+          className="social-button"
+          href="https://www.facebook.com/p/Aves-do-Oeste-by-TM-100063669277345"
+        >
           <FaFacebookF />
         </CButton>
-        <CButton className="social-button" href="https://instagram.com">
+        <CButton
+          className="social-button"
+          href="https://www.instagram.com/avesdooeste.bytm/"
+        >
           <FaInstagram />
         </CButton>
-        <CButton className="social-button" href="https://linkedin.com">
+        <CButton
+          className="social-button"
+          href="https://www.linkedin.com/company/aves-do-oeste-by-tm/"
+        >
           <FaLinkedinIn />
         </CButton>
       </CContainer>
