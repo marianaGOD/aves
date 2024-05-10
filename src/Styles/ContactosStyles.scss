@@ -11,7 +11,8 @@ $color-end: #86681b;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  height: calc(100vh - 116px);
+  //height: calc(100vh - 116px);
+  height: 100vh;
   padding: 20px;
   background-image: url("../assets/contactsbg.png");
    background-repeat: no-repeat;
@@ -73,7 +74,7 @@ $color-end: #86681b;
   }
 
   .social-media-buttons {
-    flex-direction: column; 
+    //flex-direction: column; 
   }
 }
 
