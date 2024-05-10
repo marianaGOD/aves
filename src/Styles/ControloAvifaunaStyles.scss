@@ -9,10 +9,9 @@ $cream: #f5f5dc;
   background-size: cover;
   background-position: center;
   padding: 2rem;
-  height: calc(100vh - 116px); 
-  min-width: 100%;
   overflow: hidden;
   text-align: justify;
+  height: 100vh;
 
   h1 {
     color: $gold;
