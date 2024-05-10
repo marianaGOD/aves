@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import {
   CContainer,
   CButton,
@@ -13,6 +14,7 @@ import hpbird from "../assets/corujahp2_crop.png";
 
 const HomePage = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const nav = useNavigate();
 
   return (
     <div className="homepage-container">
@@ -35,7 +37,7 @@ const HomePage = () => {
           className="text-animate"
           style={{ "--animation-delay": "1.2s" }}
           color="light"
-          onClick={() => setIsModalVisible(true)}
+          onClick={() => nav("/contactos")}
         >
           Saiba Mais
         </CButton>
