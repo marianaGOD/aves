@@ -22,7 +22,6 @@ const GET_SELLING_BIRDS = gql`
   query SellingBirds {
     sellingBirds {
       id
-      price
       race
       title
       images {
