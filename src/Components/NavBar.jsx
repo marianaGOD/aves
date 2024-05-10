@@ -29,7 +29,7 @@ const Navbar = () => {
           <h3 className="navbar-title">Aves do Oeste by TM</h3>
         </CNavbarBrand>
         <CNavbarToggler
-          onClick={() => setIsOpen(true)}
+          onClick={() => toggle()}
           aria-label="Toggle navigation"
           className="navbar-toggler"
         />
