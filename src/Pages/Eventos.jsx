@@ -152,27 +152,6 @@ export default function Eventos() {
           </CAccordionItem>
         </CAccordion>
 
-        <h2>Aves Disponíveis para Eventos</h2>
-        <CRow>
-          {data.eventBirds.map((bird) => (
-            <CCol md={3} key={bird.id} className="my-2">
-              <CCard>
-                <CCardImage orientation="top" src={bird.images[0].url} />
-                <CCardBody>
-                  <CCardTitle>{bird.title}</CCardTitle>
-                  <CCardText>{bird.description}</CCardText>
-                  <CButton
-                    color="light"
-                    onClick={() => setIsModalVisible(true)}
-                  >
-                    Contacte-nos
-                  </CButton>
-                </CCardBody>
-              </CCard>
-            </CCol>
-          ))}
-        </CRow>
-
         {/* Modal */}
         <CModal
           visible={isModalVisible}
