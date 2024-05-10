@@ -27,15 +27,9 @@ const HomePage = () => {
         </h2>
         <h6 className="text-animate" style={{ "--animation-delay": "0.6s" }}>
           <i className="text-animate" style={{ "--animation-delay": "0.9s" }}>
-            Um pássaro a voar: é ir com os olhos a voar com ele;
-            <br /> ir sobre os montes, sobre os rios, sobre os mares;
-            <br /> dar a volta ao mundo e continuar;
-            <br /> é ter um motivo de viver — é não ter chegado ainda.
+            Uma parceria especial entre o homem e a ave de presa.
           </i>
         </h6>
-        <i className="text-animate" style={{ "--animation-delay": "0.9s" }}>
-          Branquinho da Fonseca
-        </i>
         <br />
         <CButton
           className="text-animate"
