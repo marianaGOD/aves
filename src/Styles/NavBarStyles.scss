@@ -82,21 +82,6 @@
 }
 
 @media (max-width: 768px) {
-  .navbar-title {
-    display: none;
-  }
-
-  .navbar-toggler {
-    background-color: #daa520;
-    border: none;
-  }
-
-  .navbar-toggler:active,
-  .navbar-toggler:focus {
-    background-color: #daa520;
-    outline: none;
-    box-shadow: none;
-  }
 
   .navbar-nav {
     display: flex;
@@ -127,3 +112,26 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .navbar-title {
+    display: none;
+  }
+}
+
+@media (max-width: 1600px) {
+  .homepage-hero h2 {
+    max-width: 61%;
+  }
+}
+
+.navbar-toggler {
+    background-color: #daa520;
+    border: none;
+  }
+.navbar-toggler:active,
+  .navbar-toggler:focus {
+    background-color: #daa520;
+    outline: none;
+    box-shadow: none;
+  }

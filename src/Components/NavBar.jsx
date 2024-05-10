@@ -22,7 +22,7 @@ const Navbar = () => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <CNavbar expand="lg" colorScheme="light" className="bg-light">
+    <CNavbar expand="xxl" colorScheme="light" className="bg-light">
       <CContainer fluid className="bg-light navbar-container">
         <CNavbarBrand href="/" className="navbar-brand">
           <img src={aveslogo} alt="" className="navbar-logo" />
