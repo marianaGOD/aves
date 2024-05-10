@@ -157,27 +157,18 @@ export default function Eventos() {
           visible={isModalVisible}
           onClose={() => setIsModalVisible(false)}
           alignment="center"
-          className="contact-modal"
         >
-          <CModalHeader className="modal-header">
-            <CModalTitle>Contactos</CModalTitle>
+          <CModalHeader>
+            <CModalTitle></CModalTitle>
           </CModalHeader>
-          <CModalBody className="modal-body">
-            <ul>
-              <li>
-                📧
-                <a href="mailto:avesoeste@gmail.com">avesoeste@gmail.com</a>
-              </li>
-              <li>
-                💬 <a href="https://wa.me/913919838">913 919 838</a>
-              </li>
-            </ul>
+          <CModalBody>
+            <img
+              src={graphcasamentos}
+              alt="Anexo Image"
+              className="zoomable-image" // Add this class
+              style={{ width: "100%" }}
+            />
           </CModalBody>
-          <CModalFooter className="c-modal-footer">
-            <i style={{ fontSize: "0.75em" }}>
-              chamada para a rede móvel nacional
-            </i>
-          </CModalFooter>
         </CModal>
       </CContainer>
     </div>
