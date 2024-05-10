@@ -54,11 +54,15 @@ const Navbar = () => {
                 </CDropdownItem>
               </CDropdownMenu>
             </CDropdown>
-            <CNavItem>
-              <CNavLink href="/avesrapina">
-                Criação & Venda de Aves de Rapina
-              </CNavLink>
-            </CNavItem>
+            <CDropdown variant="nav">
+              <CDropdownToggle color="secondary" className="btn-services">
+                Aves de Rapina
+              </CDropdownToggle>
+              <CDropdownMenu>
+                <CDropdownItem href="/avesrapina">Venda</CDropdownItem>
+                <CDropdownItem href="/avesrapina">Criação</CDropdownItem>
+              </CDropdownMenu>
+            </CDropdown>
             <CNavItem>
               <CNavLink href="/material">Material de Falcoaria</CNavLink>
             </CNavItem>
