@@ -13,7 +13,9 @@ export default function Contactos() {
         <div className="contact-text">
           <HiOutlineMailOpen style={{ fontSize: "2rem" }} />
           <p></p>
-          <p>avesoeste@gmail.com</p>
+          <p>
+            <a href="mailto:avesoeste@gmail.com">avesoeste@gmail.com</a>
+          </p>
         </div>
       </CContainer>
       <CContainer className="contact-box">
@@ -21,10 +23,18 @@ export default function Contactos() {
           <BsFillTelephoneFill style={{ fontSize: "2rem" }} />
           <p></p>
           <p>
-            Serviços Técnicos e Orçamentos: <strong>913 919 838</strong>*
+            Serviços Técnicos e Orçamentos:{" "}
+            <strong>
+              <a href="tel:913919838">913 919 838</a>
+            </strong>
+            *
           </p>
           <p>
-            Serviços Administrativos e Faturação: <strong>966 898 875</strong>*
+            Serviços Administrativos e Faturação:{" "}
+            <strong>
+              <a href="tel:966898875">966 898 875</a>
+            </strong>
+            *
           </p>
           <i>*chamada para a rede móvel nacional</i>
         </div>
