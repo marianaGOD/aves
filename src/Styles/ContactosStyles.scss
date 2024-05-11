@@ -6,15 +6,37 @@ $text-dark: #333;
 $color-start: #2c281e;
 $color-end: #86681b;
 
+.img-bckground {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -2;
+
+  img {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+.img-coruja {
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 40vh;
+  }
+
+}
 .contact-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   //height: calc(100vh - 116px);
-  height: 100vh;
+  //height: 100vh;
   padding: 20px;
-  background-image: url("../assets/contactsbg.png");
+  //background-image: url("../assets/contactsbg.png");
    background-repeat: no-repeat;
   background-size: cover;
   

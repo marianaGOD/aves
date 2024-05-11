@@ -4,11 +4,18 @@ import "../Styles/ContactosStyles.scss";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa"; 
 import { HiOutlineMailOpen } from "react-icons/hi";
 import { BsFillTelephoneFill } from "react-icons/bs";
-
+import bg from "../assets/clearbg.png";
+import coruja from "../assets/contactsbg_crop.png";
 
 export default function Contactos() {
   return (
     <div className="contact-container">
+      <div className="img-bckground">
+        <img src={bg} alt="" />
+      </div>
+      <div className="img-coruja">
+        <img src={coruja} alt="" />
+      </div>
       <CContainer className="contact-box">
         <div className="contact-text">
           <HiOutlineMailOpen style={{ fontSize: "2rem" }} />
