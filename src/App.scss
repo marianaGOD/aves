@@ -1,2 +1,11 @@
 
 
+.bg-color {
+    background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}

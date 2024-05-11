@@ -25,6 +25,7 @@ function App() {
     <>
       <ApolloProvider client={client}>
         <Navbar />
+        <div className="bg-color"></div>
         <Router>
           <Routes>
             <Route path="/" element={<HomePage />} />
