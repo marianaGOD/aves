@@ -14,24 +14,22 @@ import Galeria from "./Pages/Galeria";
 import MaterialFalcoaria from "./Pages/MaterialFalcoaria";
 import SobreNos from "./Pages/SobreNos";
 import AvesRapina from "./Pages/AvesRapina";
-import { useEffect } from "react";
 
 const client = new ApolloClient({
   uri: import.meta.env.VITE_HYGRAPH_API,
   cache: new InMemoryCache(),
 });
 
-function App() {
-  useEffect(() => {
-    const adjustBackgroundHeight = () => {
-      const background = document.querySelector(".bg-color");
-      background.style.height = `${document.body.scrollHeight}px`;
-    };
+const adjustBackgroundHeight = () => {
+  const background = document.querySelector(".bg-color");
+  background.style.height = `${document.body.scrollHeight}px`;
+};
 
-    window.addEventListener("resize", adjustBackgroundHeight);
-    window.addEventListener("load", adjustBackgroundHeight);
-    window.addEventListener("scroll", adjustBackgroundHeight);
-  }, []);
+window.addEventListener("resize", adjustBackgroundHeight);
+window.addEventListener("load", adjustBackgroundHeight);
+window.addEventListener("scroll", adjustBackgroundHeight);
+
+function App() {
   return (
     <>
       <ApolloProvider client={client}>
