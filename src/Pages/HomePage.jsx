@@ -25,7 +25,7 @@ const HomePage = () => {
       />
       <CContainer fluid className="homepage-hero">
         <h2 className="text-animate" style={{ "--animation-delay": "0.3s" }}>
-          Aves do Oeste by TM
+          Aves do Oeste <span style={{ fontSize: "40%" }}>by TM</span>
         </h2>
         <h6 className="text-animate" style={{ "--animation-delay": "0.6s" }}>
           <i className="text-animate" style={{ "--animation-delay": "0.9s" }}>
