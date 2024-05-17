@@ -18,8 +18,6 @@ import graphcasamentos from "../assets/graphcasamentos.png";
 
 export default function Eventos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error :(</p>;
 
   return (
     <div className="eventos-container">
