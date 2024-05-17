@@ -59,8 +59,8 @@ const Navbar = () => {
                 Aves de Rapina
               </CDropdownToggle>
               <CDropdownMenu>
-                <CDropdownItem href="/avesrapina">Venda</CDropdownItem>
-                <CDropdownItem href="/avesrapina">Criação</CDropdownItem>
+                <CDropdownItem href="/avesvenda">Venda</CDropdownItem>
+                <CDropdownItem href="/avescriacao">Criação</CDropdownItem>
               </CDropdownMenu>
             </CDropdown>
             <CNavItem>

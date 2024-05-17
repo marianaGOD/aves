@@ -12,39 +12,12 @@ import {
   CModalHeader,
   CModalBody,
   CModalTitle,
-  CCardImage,
-  CCardBody,
-  CCardTitle,
-  CCardText,
-  CCard,
-  CModalFooter,
 } from "@coreui/react";
 import "../Styles/EventosStyles.scss";
 import graphcasamentos from "../assets/graphcasamentos.png";
 
-import eagle from "../assets/goldeneagle.jpg";
-import falcon from "../assets/peregrinefalcon.jpg";
-import owl from "../assets/barnowl.jpg";
-
-import { gql, useQuery } from "@apollo/client";
-
-const GET_EVENT_BIRDS = gql`
-  query EventBirds {
-    eventBirds {
-      id
-      title
-      description
-      images {
-        url
-      }
-    }
-  }
-`;
-
 export default function Eventos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const { loading, error, data } = useQuery(GET_EVENT_BIRDS);
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :(</p>;
 
