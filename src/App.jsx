@@ -11,6 +11,7 @@ import AdminPage from "./Pages/AdminPage";
 import Contactos from "./Pages/Contactos";
 import AluguerInstalacoes from "./Pages/AluguerInstalacoes";
 import Galeria from "./Pages/Galeria";
+import Galeria_2 from "./Pages/Galeria_2";
 import MaterialFalcoaria from "./Pages/MaterialFalcoaria";
 import SobreNos from "./Pages/SobreNos";
 import AvesRapina from "./Pages/AvesRapina";
@@ -44,7 +45,7 @@ function App() {
             <Route path="/eventos" element={<Eventos />} />
             <Route path="/contactos" element={<Contactos />} />
             <Route path="/aluguer" element={<AluguerInstalacoes />} />
-            <Route path="/galeria" element={<Galeria />} />
+            <Route path="/galeria" element={<Galeria_2 />} />
             <Route path="/material" element={<MaterialFalcoaria />} />
             <Route path="/about" element={<SobreNos />} />
             <Route path="/avesvenda" element={<AvesRapina />} />
