@@ -24,9 +24,11 @@ const Navbar = () => {
   return (
     <CNavbar expand="xxl" colorScheme="light" className="bg-light">
       <CContainer fluid className="bg-light navbar-container">
-        <CNavbarBrand href="/" className="navbar-brand">
+        <CNavbarBrand href="/" className="s-0 navbar-brand">
           <img src={aveslogo} alt="" className="navbar-logo" />
-          <h3 className="navbar-title">Aves do Oeste by TM</h3>
+          <h3 className="navbar-title">
+            Aves do Oeste <span>by TM</span>
+          </h3>
         </CNavbarBrand>
         <CNavbarToggler
           onClick={() => toggle()}
