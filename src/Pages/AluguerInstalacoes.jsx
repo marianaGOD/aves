@@ -18,17 +18,9 @@ export default function AluguerInstalacoes() {
       <div className="aluguer-title">
         <h1>Aluguer de Boxes Para Aves de Rapina</h1>
         <p>
-          Seja de curta ou longa duração, temos pacotes de estadias diárias,
-          quinzenais, mensais, semestrais e anuais.
+          Seja de curta ou longa duração, temos pacotes de estadias{" "}
+          <b>diárias, quinzenais, mensais, semestrais e anuais.</b>
         </p>
-      </div>
-      <div className="access">
-        <img src={camimg} alt="" style={{ height: "500px" }} />
-        <p>
-          🪶 Acesso 24h a câmara de vigilância para ver a sua ave sempre que
-          desejar.
-        </p>
-        <p>🪶Instalações de 2,5m x 2,5m x 2,7m (CxLxA).</p>
       </div>
       <div className="pricing">
         <CPopover
@@ -56,32 +48,54 @@ export default function AluguerInstalacoes() {
             className="p-0"
             style={{ textDecoration: "none", color: "inherit" }}
           >
-            <h2>Preços</h2>
+            <h2>Preços & Condições</h2>
           </CButton>
         </CPopover>
-        <ul>
+        <bl>
+          <li>Acesso 24h a câmara de vigilância</li>
           <li>
-            Diária -{" "}
-            <span style={{ fontWeight: "bold", color: "#daa520" }}>15€</span>
+            Alimentação variada congelada: pinto do dia, codorniz limpa,
+            pescoços de pato ou perú, cabeças de coelho
           </li>
           <li>
+            Desparasitação externa para ácaros e mosca da pena (à admissão)
+          </li>
+        </bl>
+
+        <br />
+        <ul>
+          <li style={{ marginTop: "0px" }}>
+            Diário -{" "}
+            <span
+              style={{ fontWeight: "bold", color: "#daa520", marginTop: "0px" }}
+            >
+              15€
+            </span>
+          </li>
+          <li style={{ marginTop: "0px" }}>
+            {" "}
             Quinzenal -{" "}
             <span style={{ fontWeight: "bold", color: "#daa520" }}>75€</span>
           </li>
-          <li>
+          <li style={{ marginTop: "0px" }}>
             Mensal -{" "}
             <span style={{ fontWeight: "bold", color: "#daa520" }}>100€</span>
           </li>
-          <li>
+          <li style={{ marginTop: "0px" }}>
             Semestral -{" "}
             <span style={{ fontWeight: "bold", color: "#daa520" }}>500€</span>
           </li>
-          <li>
+          <li style={{ marginTop: "0px" }}>
             Anual -{" "}
             <span style={{ fontWeight: "bold", color: "#daa520" }}>850€</span>
           </li>
         </ul>
       </div>
+      <div className="access">
+        <img src={camimg} alt="" style={{ height: "500px" }} />
+        <p>Instalações de 2,5m x 2,5m x 2,7m (CxLxA).</p>
+      </div>
+
       <CAccordion flush className="accordion-instalacoes">
         <CAccordionItem itemKey={1}>
           <CAccordionHeader>Extras</CAccordionHeader>
@@ -103,8 +117,12 @@ export default function AluguerInstalacoes() {
                 perdiz, faisão, pato, murganho, coelho;
               </li>
               <li>
-                Frequência da alimentação especial: 1x semana - +10%, 3x semana
-                - +30%, diária - +50%.
+                Frequência da alimentação especial:
+                <bl>
+                  <li>1x semana : +10%</li>
+                  <li>3x semana : +30%</li>
+                  <li>diária : +50%</li>
+                </bl>
               </li>
             </ul>
           </CAccordionBody>
