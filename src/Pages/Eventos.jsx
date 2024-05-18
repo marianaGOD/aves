@@ -16,6 +16,8 @@ import {
 import "../Styles/EventosStyles.scss";
 import graphcasamentos from "../assets/graphcasamentos.png";
 
+import car4 from "../assets/car4_crop.jpg";
+
 export default function Eventos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -119,6 +121,8 @@ export default function Eventos() {
                 <br />
                 Principal público-alvo: Escolas, Associações
               </p>
+
+              <img src={car4} alt="" className="img-accordion" />
             </CAccordionBody>
           </CAccordionItem>
         </CAccordion>

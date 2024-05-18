@@ -2,6 +2,10 @@ $background-dark: #2c281e;
 $gold: #daa520;
 $cream: #f5f5dc;
 
+.img-accordion {
+  width: 100%;
+}
+
 .eventos-container {
   color: $cream;
   background: linear-gradient(to right, #f5f5dc 0%, #e6d8c3 50%, #c2a886 100%);
