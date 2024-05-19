@@ -6,13 +6,6 @@ import {
   CModalHeader,
   CModalTitle,
   CModalBody,
-  CPopover,
-  CAccordion,
-  CAccordionItem,
-  CAccordionHeader,
-  CAccordionBody,
-  CContainer,
-  CRow,
 } from "@coreui/react";
 
 export default function Experiencias() {
