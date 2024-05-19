@@ -49,6 +49,12 @@ export default function ControloAvifauna() {
                 invasivas e sobrepovoadas de forma sustentável, sem recurso a
                 pesticidas e sem efeitos adversos para o meio ambiente.
               </p>
+              <p>
+                A eficácia deste método de controlo de pragas reside no
+                comportamento natural das espécies: com a presença constante de
+                um predador (ave[s] de rapina), as presas (pombos, gaivotas,
+                etc) são forçadas a afastar-se da área de atuação.
+              </p>
               <p style={{ color: "#daa520" }}>Vantagens:</p>
               <ul>
                 <li>Permite a integridade dos campos e do meio ambiente</li>

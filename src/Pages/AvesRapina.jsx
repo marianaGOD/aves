@@ -42,11 +42,9 @@ export default function AvesRapina() {
       <div className="info-box">
         <h1>Aves de Rapina</h1>
         <p>
-          Somos criadores certificados pelo <br />
-          <span style={{ fontWeight: "bold", color: "#daa520" }}>
-            Instituto da Conservação da Natureza e das Florestas{" "}
-          </span>
-          . <br />
+          Somos criadores registados no
+          <span style={{ fontWeight: "bold", color: "#daa520" }}> ICNF </span>
+          <br />
           Solicite aves disponíveis através do:
         </p>
         <ul>

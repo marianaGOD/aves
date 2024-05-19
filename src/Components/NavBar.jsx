@@ -62,7 +62,9 @@ const Navbar = () => {
               </CDropdownToggle>
               <CDropdownMenu>
                 <CDropdownItem href="/avesvenda">Venda</CDropdownItem>
-                <CDropdownItem href="/avescriacao">Criação</CDropdownItem>
+                <CDropdownItem href="/avescriacao">
+                  As nossas aves
+                </CDropdownItem>
               </CDropdownMenu>
             </CDropdown>
             <CNavItem>

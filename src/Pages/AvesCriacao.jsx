@@ -40,22 +40,25 @@ export default function AvesCriacao() {
   return (
     <div className="aves-rapina">
       <div className="info-box">
-        <h1>Aves de Rapina</h1>
+        <h1>As nossas Aves</h1>
         <p>
-          Somos criadores certificados pelo <br />
-          <span style={{ fontWeight: "bold", color: "#daa520" }}>
-            Instituto da Conservação da Natureza e das Florestas{" "}
-          </span>
-          . <br />
-          Solicite aves disponíveis através do:
+          Somos detentores de várias espécies de aves de rapina, registados no{" "}
+          <span style={{ fontWeight: "bold", color: "#daa520" }}> ICNF. </span>
+          <br />
+          Em baixo o nosso portfólio de aves disponíveis para serviços e
+          eventos.
+          <br />
+          Mais informações sobre ter a presença das nossas aves no seu evento{" "}
+          <br />
+          através do email 📧{" "}
+          <a href="mailto:avesoeste@gmail.com">avesoeste@gmail.com </a>
+          <br />
+          ou por WhatsApp para o número 💬{" "}
+          <a href="https://wa.me/913919838">913 919 838</a>
         </p>
         <ul>
-          <li>
-            📧 <a href="mailto:avesoeste@gmail.com">avesoeste@gmail.com</a>
-          </li>
-          <li>
-            💬 <a href="https://wa.me/913919838">913 919 838</a>
-          </li>
+          <li></li>
+          <li></li>
         </ul>
       </div>
       <CContainer className="aves-container">
