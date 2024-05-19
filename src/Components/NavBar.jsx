@@ -51,6 +51,7 @@ const Navbar = () => {
                 <CDropdownItem href="/eventos">
                   Eventos & Presenças
                 </CDropdownItem>
+                <CDropdownItem href="/experiencias">Experiências</CDropdownItem>
                 <CDropdownItem href="/aluguer">
                   Aluguer de Instalações para Aves
                 </CDropdownItem>

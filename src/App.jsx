@@ -16,6 +16,7 @@ import MaterialFalcoaria from "./Pages/MaterialFalcoaria";
 import SobreNos from "./Pages/SobreNos";
 import AvesRapina from "./Pages/AvesRapina";
 import AvesCriacao from "./Pages/AvesCriacao";
+import Experiencias from "./Pages/Experiencias";
 
 const client = new ApolloClient({
   uri: import.meta.env.VITE_HYGRAPH_API,
@@ -50,6 +51,7 @@ function App() {
             <Route path="/about" element={<SobreNos />} />
             <Route path="/avesvenda" element={<AvesRapina />} />
             <Route path="/avescriacao" element={<AvesCriacao />} />
+            <Route path="/experiencias" element={<Experiencias />} />
           </Routes>
         </Router>
       </ApolloProvider>
