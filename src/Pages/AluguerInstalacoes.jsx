@@ -92,7 +92,7 @@ export default function AluguerInstalacoes() {
         </ul>
       </div>
       <div className="access">
-        <img src={camimg} alt="" style={{ height: "500px" }} />
+        <img src={camimg} alt="" />
         <p>Instalações de 2,5m x 2,5m x 2,7m (CxLxA).</p>
       </div>
 
