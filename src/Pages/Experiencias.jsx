@@ -12,7 +12,7 @@ export default function Experiencias() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   return (
     <div className="aves-rapina">
-      <div className="info-box">
+      <div className="title-box">
         <h1>Experiências</h1>
         <p>
           Proporcionamos experiências de falcoaria individuais ou para pequenos
@@ -24,10 +24,6 @@ export default function Experiencias() {
           📧 <a href="mailto:avesoeste@gmail.com">avesoeste@gmail.com </a>
           <br /> 💬 <a href="https://wa.me/913919838">913 919 838</a>
         </p>
-        <ul>
-          <li></li>
-          <li></li>
-        </ul>
       </div>
       <div className="info-box">
         <p style={{ fontSize: "25px" }}>Incluí:</p>
@@ -69,11 +65,24 @@ export default function Experiencias() {
       <div className="info-box">
         <p style={{ fontSize: "25px" }}>Preços:</p>
         <bl>
-          <li>Adulto (12 anos): 35€</li>
-          <li>Crianças dos 6 aos 12: 15€</li>
-          <li>Crianças com menos de 6 anos: gratuito</li>
-          <li>Grupos a partir de 4 adultos: 30€ por pessoa</li>
-          <li>Família numerosa: 2 adultos e 3 crianças (6-12anos): 100€</li>
+          <li>
+            Adulto (12 anos): <span style={{ color: "#daa520" }}>35€</span>
+          </li>
+          <li>
+            Crianças dos 6 aos 12: <span style={{ color: "#daa520" }}>15€</span>
+          </li>
+          <li>
+            Crianças com menos de 6 anos:{" "}
+            <span style={{ color: "#daa520" }}>gratuito</span>
+          </li>
+          <li>
+            Grupos a partir de 4 adultos:{" "}
+            <span style={{ color: "#daa520" }}>30€ por pessoa</span>
+          </li>
+          <li>
+            Família numerosa: 2 adultos e 3 crianças (6-12anos):{" "}
+            <span style={{ color: "#daa520" }}>100€</span>
+          </li>
         </bl>
       </div>
 
@@ -98,6 +107,7 @@ export default function Experiencias() {
         visible={isModalVisible}
         onClose={() => setIsModalVisible(false)}
         alignment="center"
+        size="xl"
       >
         <CModalHeader>
           <CModalTitle>Termos & Condições</CModalTitle>
