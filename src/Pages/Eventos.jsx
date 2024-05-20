@@ -145,7 +145,7 @@ export default function Eventos() {
           visible={isModalVisible}
           onClose={() => setIsModalVisible(false)}
           alignment="center"
-          size="lg"
+          size="xl"
         >
           <CModalHeader>
             <CModalTitle></CModalTitle>
@@ -154,7 +154,7 @@ export default function Eventos() {
             <img
               src={graphcasamentos}
               alt="Anexo Image"
-              className="zoomable-image" // Add this class
+              //className="zoomable-image" // Add this class
               style={{ width: "100%" }}
             />
           </CModalBody>
