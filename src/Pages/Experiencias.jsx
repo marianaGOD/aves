@@ -13,7 +13,7 @@ export default function Experiencias() {
   return (
     <div className="aves-rapina">
       <div className="title-box">
-        <h1>Experiências</h1>
+        <h1>Experiências de Falcoaria</h1>
         <p>
           Proporcionamos experiências de falcoaria individuais ou para pequenos
           grupos.
