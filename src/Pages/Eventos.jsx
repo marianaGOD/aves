@@ -20,6 +20,7 @@ import car4 from "../assets/car4_crop.jpg";
 
 export default function Eventos() {
   const [isModalVisible, setIsModalVisible] = useState(false);
+  const [isTermsModalVisible, setIsTermsModalVisible] = useState(false);
 
   return (
     <div className="eventos-container">
@@ -66,9 +67,21 @@ export default function Eventos() {
                 </li>
               </ul>
               <br />
-              <CButton color="light" onClick={() => setIsModalVisible(true)}>
-                Pack Casamentos
-              </CButton>
+              <div className="btn-wedd-container">
+                <CButton
+                  color="light"
+                  onClick={() => setIsModalVisible(true)}
+                  className="btn-wedd"
+                >
+                  Pack Casamentos
+                </CButton>
+                <CButton
+                  color="light"
+                  onClick={() => setIsTermsModalVisible(true)}
+                >
+                  Termos & Condições
+                </CButton>
+              </div>
             </CAccordionBody>
           </CAccordionItem>
           <CAccordionItem className="accordion-item" itemKey={2}>
@@ -132,6 +145,7 @@ export default function Eventos() {
           visible={isModalVisible}
           onClose={() => setIsModalVisible(false)}
           alignment="center"
+          size="lg"
         >
           <CModalHeader>
             <CModalTitle></CModalTitle>
@@ -143,6 +157,78 @@ export default function Eventos() {
               className="zoomable-image" // Add this class
               style={{ width: "100%" }}
             />
+          </CModalBody>
+        </CModal>
+        <CModal
+          visible={isTermsModalVisible}
+          onClose={() => setIsTermsModalVisible(false)}
+          alignment="center"
+        >
+          <CModalHeader>
+            <CModalTitle>Termos & Condições</CModalTitle>
+          </CModalHeader>
+          <CModalBody>
+            <p>
+              • O Valor da deslocação incluí viagens no dia da cerimónia e de 1
+              dia de treino. Caso haja necessidade de mais de um treino com a
+              ave, é cobrado o valor de 0.75€/km de distância entre a sede da
+              Aves do Oeste e o local.
+            </p>
+            <p>
+              • As luvas podem ser personalizadas até 3 cores de couro e com
+              bordado.
+            </p>
+            <p>
+              • Para entrega de alianças em voo livre apenas trabalhamos com a
+              espécie Águia de Harris, pela sua capacidade de adaptação e
+              temperamento.
+            </p>
+            <p>
+              • As espécies Bufo Real e Águia de Bonelli apenas estão
+              disponíveis para sessões fotográficas privadas, com os noivos,
+              devido ao seu temperamento.
+            </p>
+            <p>
+              • O voo livre da águia em espaços abertos está dependente de
+              condições atmosféricas favoráveis.
+            </p>
+            <p>
+              • É sempre necessário pelo menos um treino no local com a ave e os
+              noivos, para a águia de harris se adaptar ao espaço e à pessoa que
+              a vai receber na luva.
+            </p>
+            <p>
+              • A Aves do Oeste não garante a performance e desempenho da ave
+              durante o voo livre, pois apesar de treinadas, não deixam de ser
+              animais selvagens que têm temperamento e vontade própria. Neste
+              caso, não há lugar à restituição de valores.
+            </p>
+            <p>
+              • Quando as aves ficam aparcadas durante o evento, é sempre
+              necessário estabelecer perímetro de segurança à volta das mesmas e
+              é expressamente proibido tocar nos animais. Os convidados podem
+              tirar fotografias à vontade, desde que com as aves nos respetivos
+              bancos.
+            </p>
+            <p>
+              • Caso alguma das aves demonstre sinais de stress ou
+              agressividade, a mesma será imediatamente retirada do espaço e
+              resguardada em local seguro.
+            </p>
+            <p>
+              • Durante o evento, pode ser necessário as aves permanecerem de
+              caparão colocado, como medida de relaxamento, caso demonstrem
+              sinais de desconforto.
+            </p>
+            <p>
+              • Método de pagamento: 20% na adjudicação do serviço para reserva
+              de data; 30% até 5 dias úteis antes do evento; 50% até 5 dias
+              úteis após o evento.
+            </p>
+            <p>
+              • A adjudicação do serviço e pagamento do respetivo sinal
+              pressupõe a leitura e aceitação dos termos e condições.
+            </p>
           </CModalBody>
         </CModal>
       </CContainer>

@@ -6,8 +6,12 @@ $cream: #f5f5dc;
   width: 100%;
 }
 
+.btn-wedd-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .title-box {
-    
   background-color: rgba($background-dark, 0.75);
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
@@ -154,4 +158,13 @@ a {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .btn-wedd-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+  .btn-wedd {
+    margin-bottom: 10px;
+  }
+}
 }
