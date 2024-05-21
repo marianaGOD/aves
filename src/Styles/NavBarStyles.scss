@@ -46,7 +46,7 @@
   width: auto;
   filter: grayscale(100%);
   transition: filter 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   margin-right: 5%;
 }
 
@@ -79,6 +79,8 @@
     flex-grow: 1; 
     justify-content: flex-end; 
   }
+
+  
 }
 
 @media (max-width: 768px) {
@@ -110,6 +112,9 @@
       background-color: #364026;
       color: #ffffff;
     }
+  }
+  .btn-services {
+    margin-left: -10px !important;
   }
 }
 

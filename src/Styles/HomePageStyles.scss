@@ -21,6 +21,10 @@ $text-color: #fff;
     font-size: large;
     margin-bottom: 1rem;
   }
+
+  .mobile-bg {
+    display: none;
+  }
 }
 
 .contact-modal {
@@ -131,6 +135,8 @@ $text-color: #fff;
   .homepage-hero {
     align-items: center;
     padding-left: 25%;
+    padding-top: 0;
+    margin-top: -50px;
 
     h2 {
       font-size: 3rem; 
@@ -139,6 +145,11 @@ $text-color: #fff;
     }
     h6 {
       font-size: 1rem; 
+    }
+
+    .mobile-bg {
+      display: block;
+      max-height: 280px;
     }
   }
 

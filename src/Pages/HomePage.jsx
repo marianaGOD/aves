@@ -10,7 +10,9 @@ import {
   CModalFooter,
 } from "@coreui/react";
 import "../Styles/HomePageStyles.scss";
+
 import hpbird from "../assets/corujahp2_crop.png";
+import mobile_bg from "../assets/backgrounds/mobile_home_bg.png";
 
 const HomePage = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -24,6 +26,7 @@ const HomePage = () => {
         className="background-image"
       />
       <CContainer fluid className="homepage-hero">
+        <img src={mobile_bg} alt="" className="mobile-bg" />
         <h2 className="text-animate" style={{ "--animation-delay": "0.3s" }}>
           Aves do Oeste <span style={{ fontSize: "40%" }}>by TM</span>
         </h2>
