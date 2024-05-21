@@ -62,7 +62,7 @@ export default function AvesCriacao() {
         </ul>
       </div>
       <CContainer className="aves-container">
-        <h2>As nossas criações</h2>
+        <h2>As nossas aves</h2>
         <CRow>
           {data.eventBirds.map((bird) => (
             <CCol md={3} key={bird.id} className="my-2">
