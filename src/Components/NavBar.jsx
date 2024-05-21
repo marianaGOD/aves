@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <CNavbar expand="xxl" colorScheme="light" className="bg-light">
-      <CContainer fluid className="bg-light navbar-container">
+      <CContainer fluid className=" navbar-container">
         <CNavbarBrand href="/" className="s-0 navbar-brand">
           <img src={aveslogo} alt="" className="navbar-logo" />
           <h3 className="navbar-title">
