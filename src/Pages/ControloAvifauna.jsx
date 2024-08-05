@@ -19,10 +19,6 @@ import "../Styles/ControloAvifaunaStyles.scss";
 export default function ControloAvifauna() {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
-  const toggleModal = () => {
-    setIsModalVisible(!isModalVisible);
-  };
-
   return (
     <div className="controlo-avifauna">
       <CContainer>

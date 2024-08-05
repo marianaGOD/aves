@@ -24,7 +24,7 @@ export default function Eventos() {
 
   return (
     <div className="eventos-container">
-      <CContainer fluid xs={12}>
+      <CContainer xs={12}>
         <CRow className="justify-content-center">
           <CCol xs={12} md={8} className="controlo-toptitle">
             <h1>Eventos & Presenças</h1>

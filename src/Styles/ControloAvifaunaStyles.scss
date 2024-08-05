@@ -162,11 +162,15 @@ $cream: #f5f5dc;
 @media (max-width: 768px) {
   .controlo-avifauna {
     padding: 1rem;
+    p {
+      padding: 10px;
+    }
   }
 
   .controlo-toptitle, .controlo-leftbox, .controlo-rightbox {
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    width: 90%;
   }
 
   .accordion .accordion-item {

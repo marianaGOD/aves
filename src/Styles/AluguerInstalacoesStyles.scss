@@ -15,12 +15,29 @@ $cream: #f5f5dc;
   height: auto;
   min-width: 100%;
 
-  .aluguer-title, .access, .pricing {
+  .aluguer-title {
     background-color: rgba($background-dark, 0.75);
     border-radius: 16px;
     padding: 20px;
     text-align: center;
     width: 50%; 
+    margin-bottom: 2%;
+  }
+
+  .access {
+    background-color: rgba($background-dark, 0.75);
+    width: 70%;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+  .pricing {
+    background-color: rgba($background-dark, 0.75);
+    width: 70%;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
     margin-bottom: 2%;
   }
 
@@ -59,7 +76,7 @@ $cream: #f5f5dc;
   }
 }
 .accordion-instalacoes {
-  width: 50%;
+  width: 70%;
 }
 
 @media (max-width: 768px) {
