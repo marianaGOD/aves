@@ -36,6 +36,9 @@ export default function Eventos() {
               CASAMENTOS
             </CAccordionHeader>
             <CAccordionBody className="accordion-body">
+              {/*
+              Foi removido temporariamente para se recalcular os preços
+
               <p style={{ color: "#daa520" }}>Preçário individual:</p>
               <ul>
                 <li>
@@ -65,16 +68,22 @@ export default function Eventos() {
                   <span style={{ color: "#daa520" }}>60€</span>/unidade ou{" "}
                   <span style={{ color: "#daa520" }}>100€</span> duas
                 </li>
-              </ul>
+              </ul>*/}
+
+              <p>
+                Para mais informações e detalhes, entrar em{" "}
+                <a href="/contactos">contacto</a>.
+              </p>
               <br />
               <div className="btn-wedd-container">
+                {/* 
                 <CButton
                   color="light"
                   onClick={() => setIsModalVisible(true)}
                   className="btn-wedd"
                 >
                   Pack Casamentos
-                </CButton>
+                </CButton>*/}
                 <CButton
                   color="light"
                   onClick={() => setIsTermsModalVisible(true)}
