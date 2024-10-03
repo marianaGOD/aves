@@ -38,37 +38,36 @@ export default function Eventos() {
             <CAccordionBody className="accordion-body">
               {/*
               Foi removido temporariamente para se recalcular os preços
-
-              <p style={{ color: "#daa520" }}>Preçário individual:</p>
+*/}
+              <p style={{ color: "#daa520" }}>Opções individuais:</p>
               <ul>
                 <li>
-                  Deslocação: <span style={{ color: "#daa520" }}>0,75€</span>/km
+                  Deslocação
+                  {/*
+                  <span style={{ color: "#daa520" }}>0,75€</span>/km
+                   */}
                   (inclui ida e volta e portagens)
                 </li>
                 <li>
-                  Entrega das alianças em voo livre com Águia de Harris –{" "}
-                  <span style={{ color: "#daa520" }}>190€</span>
+                  Entrega das alianças em voo livre com Águia de Harris
+                  {/*<span style={{ color: "#daa520" }}>190€</span>
+                   */}
                 </li>
                 <li>
                   Sessão fotográfica com noivos após cerimónia: com todas as
-                  aves selecionadas, até 3h de duração –{" "}
-                  <span style={{ color: "#daa520" }}>250€</span>
+                  aves selecionadas, até 3h de duração
                 </li>
                 <li>
                   Sessão fotográfica com convidados após cerimónia: com todas as
                   aves selecionadas (exceto Bufo Real e Águia de Bonelli), até
-                  2h de duração – <span style={{ color: "#daa520" }}>250€</span>
+                  2h de duração
                 </li>
                 <li>
-                  Presença durante o evento, como parte de decoração do espaço –
-                  <span style={{ color: "#daa520" }}>60€</span>/h
+                  Presença durante o evento, como parte de decoração do espaço
                 </li>
-                <li>
-                  Luva personalizada para noivos –{" "}
-                  <span style={{ color: "#daa520" }}>60€</span>/unidade ou{" "}
-                  <span style={{ color: "#daa520" }}>100€</span> duas
-                </li>
-              </ul>*/}
+                <li>Luva personalizada para noivos</li>
+              </ul>
+              <br />
 
               <p>
                 Para mais informações e detalhes, entrar em{" "}
