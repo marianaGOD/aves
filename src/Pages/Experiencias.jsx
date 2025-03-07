@@ -19,6 +19,12 @@ export default function Experiencias() {
           grupos.
           <br />
           <br />
+          <div className="extra-info">
+            <i>Disponivel de Julho a Dezembro</i>
+            <br />
+            <i>Sujeito a marcação com atecedência mínima de 1 semana</i>
+          </div>
+          <br />
           <b>Contactos:</b>
           <br />
           📧 <a href="mailto:avesoeste@gmail.com">avesoeste@gmail.com </a>
