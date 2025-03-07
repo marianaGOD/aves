@@ -21,6 +21,12 @@ export default function AluguerInstalacoes() {
           Seja de curta ou longa duração, temos pacotes de estadias{" "}
           <b>diárias, quinzenais, mensais, semestrais e anuais.</b>
         </p>
+
+        <h3>
+          <i>
+            <u>Temporariamente indisponível</u>
+          </i>
+        </h3>
       </div>
       <div className="pricing">
         <CPopover
