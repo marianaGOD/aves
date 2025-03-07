@@ -39,9 +39,7 @@ export default function Experiencias() {
             suas características.
           </li>
           <li>Interação direta com os animais</li>
-          <li>Visita ao centro de criação.</li>
           <li>Alimentação das aves.</li>
-          <li>Voo livre com passagem à luva dos participantes.</li>
         </bl>
 
         <br />
